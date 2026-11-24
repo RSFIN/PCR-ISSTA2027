@@ -7,7 +7,7 @@ abstract: >-
   corpus, a 522-case verdict matrix and an 18-configuration comparison.
 type: software
 license: MIT
-repository-code: "TODO: repository URL (add at camera-ready)"
+repository-code: "https://anonymous.4open.science/r/PCR-ISSTA2027/"
 date-released: "2026-11-24"
 keywords:
   - PLC
