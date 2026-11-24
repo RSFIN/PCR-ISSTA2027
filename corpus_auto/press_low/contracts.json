@@ -1,0 +1,95 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 25 AND rPress <= 35"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 25 AND rPress <= 35"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 25 AND rPress <= 35"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 25 AND rPress <= 35"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 25 AND rPress <= 35"
+      }
+    ]
+  }
+}

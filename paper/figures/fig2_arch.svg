@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="256" viewBox="0 0 792 256" font-family="Helvetica, Arial, sans-serif">
+<rect width="792" height="256" fill="#ffffff"/>
+<rect x="19" y="18" width="178" height="206" rx="7" fill="#F6F8F9"/>
+<rect x="211" y="18" width="178" height="206" rx="7" fill="#F6F8F9"/>
+<rect x="403" y="18" width="178" height="206" rx="7" fill="#F6F8F9"/>
+<rect x="595" y="18" width="178" height="206" rx="7" fill="#F6F8F9"/>
+<circle cx="40" cy="38" r="9" fill="#16202A"/>
+<text x="40.0" y="42.0" font-size="10.5" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<text x="56.0" y="42.0" font-size="13.0" fill="#16202A" font-weight="bold" text-anchor="start">Change order</text>
+<circle cx="232" cy="38" r="9" fill="#16202A"/>
+<text x="232.0" y="42.0" font-size="10.5" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<text x="248.0" y="42.0" font-size="13.0" fill="#16202A" font-weight="bold" text-anchor="start">Licence compiler</text>
+<circle cx="424" cy="38" r="9" fill="#16202A"/>
+<text x="424.0" y="42.0" font-size="10.5" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<text x="440.0" y="42.0" font-size="13.0" fill="#16202A" font-weight="bold" text-anchor="start">Differential engine</text>
+<circle cx="616" cy="38" r="9" fill="#16202A"/>
+<text x="616.0" y="42.0" font-size="10.5" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+<text x="632.0" y="42.0" font-size="13.0" fill="#16202A" font-weight="bold" text-anchor="start">Verdict</text>
+<path d="M202 116 L207 123 L202 130" fill="none" stroke="#C3CBD1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M394 116 L399 123 L394 130" fill="none" stroke="#C3CBD1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M586 116 L591 123 L586 130" fill="none" stroke="#C3CBD1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="33" y="50" width="150" height="94" rx="4" fill="#ffffff" stroke="#E0B4AE" stroke-width="1.1"/>
+<text x="43.0" y="72.0" font-size="11.6" fill="#16202A" text-anchor="start">manual clamp allowed</text>
+<text x="43.0" y="88.0" font-size="11.6" fill="#16202A" text-anchor="start">under overload</text>
+<text x="43.0" y="110.0" font-size="10.6" fill="#6F7B85" text-anchor="start">target: yClamp</text>
+<text x="43.0" y="126.0" font-size="10.6" fill="#6F7B85" text-anchor="start">program P (ST)</text>
+<circle cx="39" cy="166" r="3" fill="#C0392B"/>
+<text x="48.0" y="170.0" font-size="10.8" fill="#C0392B" text-anchor="start">two defensible</text>
+<text x="48.0" y="184.0" font-size="10.8" fill="#C0392B" text-anchor="start">readings</text>
+<text x="229.0" y="68.0" font-size="13.5" fill="#2E86C1" font-weight="bold" text-anchor="start">A</text>
+<text x="247.0" y="68.0" font-size="11.5" fill="#16202A" text-anchor="start">outputs</text>
+<line x1="227" y1="75" x2="373" y2="75" stroke="#E7ECEF" stroke-width="0.9"/>
+<text x="229.0" y="98.0" font-size="13.5" fill="#2E86C1" font-weight="bold" text-anchor="start">G</text>
+<text x="247.0" y="98.0" font-size="11.5" fill="#16202A" text-anchor="start">guard</text>
+<line x1="227" y1="105" x2="373" y2="105" stroke="#E7ECEF" stroke-width="0.9"/>
+<text x="229.0" y="128.0" font-size="13.5" fill="#2E86C1" font-weight="bold" text-anchor="start">W</text>
+<text x="247.0" y="128.0" font-size="11.5" fill="#16202A" text-anchor="start">window</text>
+<line x1="227" y1="135" x2="373" y2="135" stroke="#E7ECEF" stroke-width="0.9"/>
+<text x="229.0" y="158.0" font-size="13.5" fill="#2E86C1" font-weight="bold" text-anchor="start">T</text>
+<text x="247.0" y="158.0" font-size="11.5" fill="#16202A" text-anchor="start">tolerance</text>
+<text x="229.0" y="196.0" font-size="10.4" fill="#6F7B85" text-anchor="start">rules, not an LLM</text>
+<text x="229.0" y="210.0" font-size="10.4" fill="#6F7B85" text-anchor="start">4 typed failure codes</text>
+<text x="417.0" y="101.0" font-size="11.5" fill="#16202A" font-style="italic" text-anchor="start">P</text>
+<text x="417.0" y="141.0" font-size="11.5" fill="#16202A" font-style="italic" text-anchor="start">P′</text>
+<polyline points="437,104 473,104 473,88 501,88 501,104 565,104" fill="none" stroke="#16202A" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="437,144 473,144 473,128 523,128 523,144 565,144" fill="none" stroke="#16202A" stroke-width="1.7" stroke-linejoin="round"/>
+<rect x="501" y="83" width="22" height="61" fill="#C0392B" opacity="0.13"/>
+<line x1="501" y1="81" x2="501" y2="146" stroke="#C0392B" stroke-width="0.9" stroke-dasharray="3,2.5"/>
+<line x1="523" y1="81" x2="523" y2="146" stroke="#C0392B" stroke-width="0.9" stroke-dasharray="3,2.5"/>
+<text x="512.0" y="77.0" font-size="11.0" fill="#C0392B" font-weight="bold" text-anchor="middle">Δ</text>
+<text x="417.0" y="166.0" font-size="10.4" fill="#6F7B85" text-anchor="start">one output, one trace</text>
+<text x="417.0" y="184.0" font-size="10.4" fill="#6F7B85" text-anchor="start">40 random + 8 directed</text>
+<text x="417.0" y="202.0" font-size="10.4" fill="#1E8449" text-anchor="start">3 programs, 2,099 cycles:</text>
+<text x="417.0" y="216.0" font-size="10.4" fill="#1E8449" text-anchor="start">identical to matiec / OpenPLC</text>
+<text x="611.0" y="60.0" font-size="11.0" fill="#16202A" text-anchor="start">is each Δ inside</text>
+<text x="611.0" y="76.0" font-size="11.6" fill="#16202A" text-anchor="start">A ∧ G ∧ W ∧ T ?</text>
+<rect x="611" y="88" width="146" height="30" rx="4" fill="#FBEDEC" stroke="#C0392B" stroke-width="1.2"/>
+<text x="621.0" y="108.0" font-size="11.6" fill="#C0392B" font-weight="bold" text-anchor="start">no → VIOLATED</text>
+<rect x="611" y="126" width="146" height="30" rx="4" fill="#EDF6EF" stroke="#1E8449" stroke-width="1.2"/>
+<text x="621.0" y="146.0" font-size="11.6" fill="#1E8449" font-weight="bold" text-anchor="start">yes → CONTAINED</text>
+<text x="611.0" y="182.0" font-size="10.0" fill="#6F7B85" font-weight="bold" text-anchor="start">INCOMPLETE</text>
+<text x="611.0" y="195.0" font-size="9.8" fill="#6F7B85" text-anchor="start">change did not happen</text>
+<text x="611.0" y="212.0" font-size="10.0" fill="#6F7B85" font-weight="bold" text-anchor="start">UNDETERMINED</text>
+<text x="611.0" y="225.0" font-size="9.8" fill="#6F7B85" text-anchor="start">cannot parse or run</text>
+</svg>

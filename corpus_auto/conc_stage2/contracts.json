@@ -1,0 +1,95 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 60 AND rConc <= 70"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 60 AND rConc <= 70"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 60 AND rConc <= 70"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 60 AND rConc <= 70"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 60 AND rConc <= 70"
+      }
+    ]
+  }
+}

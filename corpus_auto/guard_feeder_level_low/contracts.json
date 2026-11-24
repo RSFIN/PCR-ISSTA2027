@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xAuto",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xPermit",
+        "allow": [
+          "yFeeder"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xAuto",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xPermit",
+        "allow": [
+          "yFeeder"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xAuto",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xPermit",
+        "allow": [
+          "yFeeder"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ],
+        "guard": "NOT xLevel"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConvey",
+          "yMix",
+          "yFeeder",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xAuto",
+        "allow": [
+          "yFeeder"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xLevel AND xManual AND NOT xPermit",
+        "allow": [
+          "yFeeder"
+        ]
+      }
+    ]
+  }
+}

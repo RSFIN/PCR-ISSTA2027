@@ -1,0 +1,54 @@
+{
+  "change_order": "xFault 为 TRUE时，该联锁不再约束手动支路，手动模式下允许 C 泵运行；xFault 为 TRUE这一前提不变，窗口外维持原闭锁；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ],
+        "guard": "xFault"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xAuto",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xLevel",
+        "allow": [
+          "yPumpC"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（三泵并联供水），自建"
+}

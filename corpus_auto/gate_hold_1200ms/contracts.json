@@ -1,0 +1,107 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xPart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yGate"
+        ],
+        "window": [
+          0,
+          70
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 70,
+          "tol": 0
+        },
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yGate"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 70,
+          "tol": 0
+        },
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xPart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yGate"
+        ],
+        "window": [
+          0,
+          120
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 70,
+          "tol": 0
+        },
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xPart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yGate"
+        ],
+        "window": [
+          0,
+          120
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 70,
+          "tol": 0
+        },
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xAuto",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xLevel",
+        "allow": [
+          "yPumpC"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xAuto",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xLevel",
+        "allow": [
+          "yPumpC"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xAuto",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xLevel",
+        "allow": [
+          "yPumpC"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ],
+        "guard": "xFault"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "yPumpC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xAuto",
+        "allow": [
+          "yPumpC"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xFault AND xManual AND NOT xLevel",
+        "allow": [
+          "yPumpC"
+        ]
+      }
+    ]
+  }
+}

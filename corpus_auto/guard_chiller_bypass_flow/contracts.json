@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xAuto",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xTemp",
+        "allow": [
+          "yBypass"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xAuto",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xTemp",
+        "allow": [
+          "yBypass"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xAuto",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xTemp",
+        "allow": [
+          "yBypass"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ],
+        "guard": "NOT xFlow"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xAuto",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xTemp",
+        "allow": [
+          "yBypass"
+        ]
+      }
+    ]
+  }
+}

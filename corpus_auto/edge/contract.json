@@ -1,0 +1,37 @@
+{
+  "change_order": "互锁后的动作延时由 30ms 改为 50ms；其余逻辑不变。",
+  "over_edit_kind": "same-variable-window",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xA",
+          "dir": "rising"
+        },
+        "allow": [
+          "yCmd"
+        ],
+        "window": [
+          0,
+          5
+        ],
+        "guard": "xB"
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 2,
+          "tol": 0
+        },
+        "allow": [
+          "yCmd"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 20,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（互锁动作）"
+}

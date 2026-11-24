@@ -1,0 +1,95 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm"
+        ],
+        "guard": "xFault"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  }
+}

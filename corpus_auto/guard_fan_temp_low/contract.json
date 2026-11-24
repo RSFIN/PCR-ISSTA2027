@@ -1,0 +1,47 @@
+{
+  "change_order": "xTemp 断开时，该联锁不再约束手动支路，允许循环风机单独运行；xTemp 断开这一前提不变，窗口外维持原闭锁；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ],
+        "guard": "NOT xTemp"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit",
+        "allow": [
+          "yFan"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit AND NOT xManual",
+        "allow": [
+          "yFan"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（烘箱风机/加热/风门），自建"
+}

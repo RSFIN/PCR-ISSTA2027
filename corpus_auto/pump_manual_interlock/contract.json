@@ -1,0 +1,30 @@
+{
+  "change_order": "手动模式下允许在联锁禁止时点动阀门；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yValve",
+          "yPump"
+        ],
+        "guard": "xManual"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yValve",
+          "yPump",
+          "yAlarm"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（泵站），复用 `corpus/pump`"
+}

@@ -1,0 +1,95 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yEject",
+          "yAlarm"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yEject",
+          "yAlarm"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yEject",
+          "yAlarm"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yAlarm"
+        ],
+        "guard": "xOverload"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yEject",
+          "yAlarm"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "change_order": "液位三段控制的低段切换阈值由 30 改为 40；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（液位三段），形态对应双限报警与三段分档"
+}

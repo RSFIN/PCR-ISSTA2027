@@ -1,0 +1,54 @@
+{
+  "change_order": "xStop 为 TRUE时，该联锁不再约束手动支路，手动模式下允许末段输送点动；xStop 为 TRUE这一前提不变，窗口外维持原闭锁；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ],
+        "guard": "xStop"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xAuto",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xPermit",
+        "allow": [
+          "yConv3"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（三段输送串联），自建"
+}

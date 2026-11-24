@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper listed below."
+title: "Four Lessons from Building a Licence-Based Reviewer for PLC Change Orders"
+abstract: >-
+  Artifact for a study that compiles PLC change orders into executable licences
+  and decides whether a proposed patch stays inside them, with a 96-program
+  corpus, a 522-case verdict matrix and an 18-configuration comparison.
+type: software
+license: MIT
+repository-code: "TODO: repository URL (add at camera-ready)"
+date-released: "2026-11-24"
+keywords:
+  - PLC
+  - IEC 61131-3
+  - change review
+  - differential testing
+  - over-editing
+  - coding agents
+authors:
+  # TODO: replace with the author list at camera-ready. Kept anonymous while
+  # the paper is under double-blind review.
+  - name: "Anonymous Author(s)"
+preferred-citation:
+  type: conference-paper
+  title: "Four Lessons from Building a Licence-Based Reviewer for PLC Change Orders"
+  conference:
+    name: "36th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA '27)"
+    location: "Singapore"
+    start-date: "2027-09-07"
+    end-date: "2027-09-10"
+  year: 2027
+  # DOI to be added at camera-ready.

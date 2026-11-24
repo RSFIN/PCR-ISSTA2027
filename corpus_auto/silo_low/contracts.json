@@ -1,0 +1,94 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ],
+        "guard": "rSilo >= 15 AND rSilo <= 20"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ],
+        "guard": "rSilo >= 15 AND rSilo <= 20"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ],
+        "guard": "rSilo >= 15 AND rSilo <= 20"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yInlet",
+          "yOutlet",
+          "yFull"
+        ],
+        "guard": "rSilo >= 15 AND rSilo <= 20"
+      }
+    ]
+  }
+}

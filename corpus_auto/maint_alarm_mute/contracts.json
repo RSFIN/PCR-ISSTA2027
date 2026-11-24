@@ -1,0 +1,87 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm",
+          "yLamp"
+        ],
+        "guard": "xManual"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  }
+}

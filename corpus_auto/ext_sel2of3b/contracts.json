@@ -1,0 +1,107 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xS1",
+          "dir": "rising"
+        },
+        "allow": [
+          "yDisagree"
+        ],
+        "window": [
+          0,
+          50
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yDisagree"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yDisagree"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yDisagree"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xS1",
+          "dir": "rising"
+        },
+        "allow": [
+          "yDisagree"
+        ],
+        "window": [
+          0,
+          200
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yDisagree"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xS1",
+          "dir": "rising"
+        },
+        "allow": [
+          "yDisagree"
+        ],
+        "window": [
+          0,
+          200
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yDisagree"
+        ]
+      }
+    ]
+  }
+}

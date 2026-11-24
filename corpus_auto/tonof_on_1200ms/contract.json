@@ -1,0 +1,36 @@
+{
+  "change_order": "xIn 上升沿触发的 TONOF 接通延时由 500 毫秒改为 1200 毫秒；其余逻辑不变。",
+  "over_edit_kind": "same-variable-window",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xIn",
+          "dir": "rising"
+        },
+        "allow": [
+          "yQ"
+        ],
+        "window": [
+          0,
+          150
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 70,
+          "tol": 0
+        },
+        "allow": [
+          "yQ"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "spaced",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT basic TONOF（开/关双延时）语义移植"
+}

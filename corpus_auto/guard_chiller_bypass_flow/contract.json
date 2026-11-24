@@ -1,0 +1,54 @@
+{
+  "change_order": "xFlow 断开时，该联锁不再约束手动支路，手动模式下允许旁通阀打开；xFlow 断开这一前提不变，窗口外维持原闭锁；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ],
+        "guard": "NOT xFlow"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yChW",
+          "yCwPump",
+          "yBypass",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xAuto",
+        "allow": [
+          "yBypass"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFlow AND xManual AND NOT xTemp",
+        "allow": [
+          "yBypass"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（冷机冷冻泵/冷却泵/旁通），自建"
+}

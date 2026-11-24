@@ -1,0 +1,30 @@
+{
+  "change_order": "输出脉冲改为仅在 xClk 上升沿产生一个扫描周期；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPulse"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPulse"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 400,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT Basic B_TRIG（双边沿脉冲），正文逐字",
+  "undetermined": "E_FALLBACK_G0",
+  "undetermined_detail": "无 guard/edge/window，allow 覆盖 1/1 个输出",
+  "expected_miss": true,
+  "miss_reason": "上界退化为变量级（G0）：窗口与工况守卫两维全部丢失（典型诱因：带记忆的赋值——输出在部分分支不被赋值，差异会延续到静态守卫之外）"
+}

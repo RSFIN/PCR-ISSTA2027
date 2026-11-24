@@ -1,0 +1,32 @@
+{
+  "change_order": "故障时允许主泵继续运行，故障闭锁只约束备用泵；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm"
+        ],
+        "guard": "xFault"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（主备泵站），自建"
+}

@@ -1,0 +1,55 @@
+config,pi,fp_ours,fn_ours,fp_opponent,fn_opponent,delta_fp,delta_fn,cFN_over_cFP_threshold,interpretation
+C3,0.043,0.0,6.3,0.0,43.0,0.0,-36.7,dominated,ours dominates (opponent has more FP and no fewer FN)
+C4,0.043,0.0,6.3,28.1,13.6,28.1,-7.3,dominated,ours dominates (opponent has more FP and no fewer FN)
+C5,0.043,0.0,6.3,7.0,13.6,7.0,-7.3,dominated,ours dominates (opponent has more FP and no fewer FN)
+C6,0.043,0.0,6.3,302.6,0.0,302.6,6.3,48.08,opponent better if cFN/cFP > 48.08; ours better below
+C7,0.043,0.0,6.3,21.1,13.5,21.1,-7.2,dominated,ours dominates (opponent has more FP and no fewer FN)
+C-SD,0.043,0.0,6.3,292.0,0.5,292.0,5.8,50.63,opponent better if cFN/cFP > 50.63; ours better below
+C7-AI,0.043,0.0,6.3,49.3,0.5,49.3,5.8,8.54,opponent better if cFN/cFP > 8.54; ours better below
+C1a,0.043,0.0,6.3,0.0,43.0,0.0,-36.7,dominated,ours dominates (opponent has more FP and no fewer FN)
+C1b,0.043,0.0,6.3,35.2,18.2,35.2,-11.9,dominated,ours dominates (opponent has more FP and no fewer FN)
+C2,0.043,0.0,6.3,95.0,41.6,95.0,-35.3,dominated,ours dominates (opponent has more FP and no fewer FN)
+C2-same,0.043,0.0,6.3,95.0,41.6,95.0,-35.3,dominated,ours dominates (opponent has more FP and no fewer FN)
+C-LS,0.043,0.0,6.3,80.9,0.2,80.9,6.1,13.23,opponent better if cFN/cFP > 13.23; ours better below
+L5-DS-bare,0.043,0.0,6.3,172.4,0.5,172.4,5.8,29.89,opponent better if cFN/cFP > 29.89; ours better below
+L5-DS-line,0.043,0.0,6.3,161.8,0.3,161.8,5.9,27.23,opponent better if cFN/cFP > 27.23; ours better below
+L5-QW-bare,0.043,0.0,6.3,56.3,0.0,56.3,6.3,8.95,opponent better if cFN/cFP > 8.95; ours better below
+L5-QW-line,0.043,0.0,6.3,52.8,0.0,52.8,6.3,8.39,opponent better if cFN/cFP > 8.39; ours better below
+L5-KM-bare,0.043,0.0,6.3,63.3,0.3,63.3,5.9,10.66,opponent better if cFN/cFP > 10.66; ours better below
+L5-KM-line,0.043,0.0,6.3,59.8,0.3,59.8,5.9,10.06,opponent better if cFN/cFP > 10.06; ours better below
+C3,0.1,0.0,14.6,0.0,100.0,0.0,-85.4,dominated,ours dominates (opponent has more FP and no fewer FN)
+C4,0.1,0.0,14.6,26.5,31.7,26.5,-17.1,dominated,ours dominates (opponent has more FP and no fewer FN)
+C5,0.1,0.0,14.6,6.6,31.7,6.6,-17.1,dominated,ours dominates (opponent has more FP and no fewer FN)
+C6,0.1,0.0,14.6,284.6,0.0,284.6,14.6,19.44,opponent better if cFN/cFP > 19.44; ours better below
+C7,0.1,0.0,14.6,19.9,31.3,19.9,-16.7,dominated,ours dominates (opponent has more FP and no fewer FN)
+C-SD,0.1,0.0,14.6,274.6,1.2,274.6,13.4,20.47,opponent better if cFN/cFP > 20.47; ours better below
+C7-AI,0.1,0.0,14.6,46.3,1.2,46.3,13.4,3.45,opponent better if cFN/cFP > 3.45; ours better below
+C1a,0.1,0.0,14.6,0.0,100.0,0.0,-85.4,dominated,ours dominates (opponent has more FP and no fewer FN)
+C1b,0.1,0.0,14.6,33.1,42.3,33.1,-27.6,dominated,ours dominates (opponent has more FP and no fewer FN)
+C2,0.1,0.0,14.6,89.3,96.7,89.3,-82.1,dominated,ours dominates (opponent has more FP and no fewer FN)
+C2-same,0.1,0.0,14.6,89.3,96.7,89.3,-82.1,dominated,ours dominates (opponent has more FP and no fewer FN)
+C-LS,0.1,0.0,14.6,76.1,0.4,76.1,14.2,5.35,opponent better if cFN/cFP > 5.35; ours better below
+L5-DS-bare,0.1,0.0,14.6,162.1,1.2,162.1,13.4,12.09,opponent better if cFN/cFP > 12.09; ours better below
+L5-DS-line,0.1,0.0,14.6,152.2,0.8,152.2,13.8,11.01,opponent better if cFN/cFP > 11.01; ours better below
+L5-QW-bare,0.1,0.0,14.6,52.9,0.0,52.9,14.6,3.62,opponent better if cFN/cFP > 3.62; ours better below
+L5-QW-line,0.1,0.0,14.6,49.6,0.0,49.6,14.6,3.39,opponent better if cFN/cFP > 3.39; ours better below
+L5-KM-bare,0.1,0.0,14.6,59.6,0.8,59.6,13.8,4.31,opponent better if cFN/cFP > 4.31; ours better below
+L5-KM-line,0.1,0.0,14.6,56.2,0.8,56.2,13.8,4.07,opponent better if cFN/cFP > 4.07; ours better below
+C3,0.25,0.0,36.6,0.0,250.0,0.0,-213.4,dominated,ours dominates (opponent has more FP and no fewer FN)
+C4,0.25,0.0,36.6,22.1,79.3,22.1,-42.7,dominated,ours dominates (opponent has more FP and no fewer FN)
+C5,0.25,0.0,36.6,5.5,79.3,5.5,-42.7,dominated,ours dominates (opponent has more FP and no fewer FN)
+C6,0.25,0.0,36.6,237.1,0.0,237.1,36.6,6.48,opponent better if cFN/cFP > 6.48; ours better below
+C7,0.25,0.0,36.6,16.5,78.3,16.5,-41.7,dominated,ours dominates (opponent has more FP and no fewer FN)
+C-SD,0.25,0.0,36.6,228.9,3.0,228.9,33.5,6.82,opponent better if cFN/cFP > 6.82; ours better below
+C7-AI,0.25,0.0,36.6,38.6,3.0,38.6,33.5,1.15,opponent better if cFN/cFP > 1.15; ours better below
+C1a,0.25,0.0,36.6,0.0,250.0,0.0,-213.4,dominated,ours dominates (opponent has more FP and no fewer FN)
+C1b,0.25,0.0,36.6,27.6,105.7,27.6,-69.1,dominated,ours dominates (opponent has more FP and no fewer FN)
+C2,0.25,0.0,36.6,74.4,241.9,74.4,-205.3,dominated,ours dominates (opponent has more FP and no fewer FN)
+C2-same,0.25,0.0,36.6,74.4,241.9,74.4,-205.3,dominated,ours dominates (opponent has more FP and no fewer FN)
+C-LS,0.25,0.0,36.6,63.4,1.0,63.4,35.6,1.78,opponent better if cFN/cFP > 1.78; ours better below
+L5-DS-bare,0.25,0.0,36.6,135.1,3.0,135.1,33.5,4.03,opponent better if cFN/cFP > 4.03; ours better below
+L5-DS-line,0.25,0.0,36.6,126.8,2.0,126.8,34.6,3.67,opponent better if cFN/cFP > 3.67; ours better below
+L5-QW-bare,0.25,0.0,36.6,44.1,0.0,44.1,36.6,1.21,opponent better if cFN/cFP > 1.21; ours better below
+L5-QW-line,0.25,0.0,36.6,41.4,0.0,41.4,36.6,1.13,opponent better if cFN/cFP > 1.13; ours better below
+L5-KM-bare,0.25,0.0,36.6,49.6,2.0,49.6,34.6,1.44,opponent better if cFN/cFP > 1.44; ours better below
+L5-KM-line,0.25,0.0,36.6,46.9,2.0,46.9,34.6,1.36,opponent better if cFN/cFP > 1.36; ours better below

@@ -1,0 +1,607 @@
+{
+  "meta": {
+    "n_runs": 522,
+    "n_specs": 96,
+    "n_pos_files": 250,
+    "n_undetermined": 4,
+    "recall_denominator": 246,
+    "n_neg": 96,
+    "n_ctrl0": 96,
+    "n_ctrl1": 80,
+    "n_ctrl": 272,
+    "n_traces_per_case": 48,
+    "n_directed": 8,
+    "bootstrap": 10000,
+    "seed": 42
+  },
+  "RQ1": {
+    "definition": "主指标 recall over observable over-edits；分母 = 唯一越界补丁文件 − expected_miss",
+    "k": 210,
+    "n": 246,
+    "recall": 0.853659,
+    "wilson": [
+      0.804058,
+      0.892384
+    ],
+    "cluster_boot_ci": [
+      0.805085,
+      0.902041
+    ],
+    "blocked_k": 222,
+    "blocked_rate": 0.902439,
+    "blocked_wilson": [
+      0.858942,
+      0.933561
+    ],
+    "undetermined": [
+      "pos__hyst_band__bad_O4",
+      "pos__hyst_connect__bad_O4",
+      "pos__silo_low__bad_O4",
+      "pos__vfd_low__bad_O4"
+    ],
+    "macro_by_spec": 0.978261,
+    "macro_wilson": [
+      0.924165,
+      0.994018
+    ],
+    "by_op": {
+      "O1": {
+        "k": 54,
+        "n": 54,
+        "recall": 1.0,
+        "wilson": [
+          0.933586,
+          1.0
+        ]
+      },
+      "O2": {
+        "k": 54,
+        "n": 72,
+        "recall": 0.75,
+        "wilson": [
+          0.639065,
+          0.835609
+        ]
+      },
+      "O3": {
+        "k": 28,
+        "n": 38,
+        "recall": 0.736842,
+        "wilson": [
+          0.579912,
+          0.850284
+        ]
+      },
+      "O4": {
+        "k": 22,
+        "n": 22,
+        "recall": 1.0,
+        "wilson": [
+          0.851345,
+          1.0
+        ]
+      },
+      "O5": {
+        "k": 3,
+        "n": 3,
+        "recall": 1.0,
+        "wilson": [
+          0.438503,
+          1.0
+        ]
+      },
+      "O6": {
+        "k": 14,
+        "n": 20,
+        "recall": 0.7,
+        "wilson": [
+          0.481027,
+          0.854523
+        ]
+      },
+      "O7": {
+        "k": 11,
+        "n": 11,
+        "recall": 1.0,
+        "wilson": [
+          0.741167,
+          1.0
+        ]
+      },
+      "O8": {
+        "k": 24,
+        "n": 26,
+        "recall": 0.923077,
+        "wilson": [
+          0.758584,
+          0.978645
+        ]
+      }
+    },
+    "by_kind": {
+      "normal": {
+        "k": 184,
+        "n": 220,
+        "recall": 0.836364,
+        "wilson": [
+          0.781785,
+          0.879397
+        ]
+      },
+      "refactor": {
+        "k": 26,
+        "n": 26,
+        "recall": 1.0,
+        "wilson": [
+          0.871271,
+          1.0
+        ]
+      }
+    },
+    "by_edge": {
+      "always 型": {
+        "k": 155,
+        "n": 168,
+        "recall": 0.922619,
+        "wilson": [
+          0.87212,
+          0.954223
+        ]
+      },
+      "有 edge": {
+        "k": 55,
+        "n": 78,
+        "recall": 0.705128,
+        "wilson": [
+          0.596242,
+          0.794758
+        ]
+      }
+    }
+  },
+  "RQ2": {
+    "Neg 合规改动": {
+      "k": 0,
+      "n": 96,
+      "fpr": 0.0,
+      "wilson": [
+        0.0,
+        0.038476
+      ],
+      "verdicts": {
+        "CONTAINED": 96
+      }
+    },
+    "Ctrl-0 空改动": {
+      "k": 0,
+      "n": 96,
+      "fpr": 0.0,
+      "wilson": [
+        0.0,
+        0.038476
+      ],
+      "verdicts": {
+        "INCOMPLETE": 96
+      }
+    },
+    "Ctrl-1 无关合规改动": {
+      "k": 0,
+      "n": 80,
+      "fpr": 0.0,
+      "wilson": [
+        0.0,
+        0.045818
+      ],
+      "verdicts": {
+        "INCOMPLETE": 75,
+        "CONTAINED": 5
+      }
+    },
+    "合计": {
+      "k": 0,
+      "n": 272,
+      "fpr": 0.0,
+      "wilson": [
+        0.0,
+        0.013926
+      ],
+      "verdicts": {
+        "CONTAINED": 101,
+        "INCOMPLETE": 171
+      },
+      "cluster_boot_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "口径": "误报只计 VIOLATED；Ctrl-0/1 的 INCOMPLETE 是下界正确报告『补丁没实现工单』，不是误报（见 make_ctrl1.py 的语义澄清）"
+  },
+  "RQ3": {
+    "unit": "ms / 每组 (spec, patch)，含 44 条轨迹 × 2 次 run + 4 配置判定",
+    "quantiles": {
+      "min": 3.07,
+      "p50": 235.227,
+      "p90": 328.744,
+      "p95": 430.723,
+      "p99": 540.684,
+      "max": 589.092,
+      "mean": 211.24
+    },
+    "by_arm": {
+      "pos": {
+        "min": 3.07,
+        "p50": 238.289,
+        "p90": 352.123,
+        "p95": 448.028,
+        "p99": 540.684,
+        "max": 589.092,
+        "mean": 220.587
+      },
+      "neg": {
+        "min": 3.136,
+        "p50": 215.253,
+        "p90": 318.798,
+        "p95": 427.43,
+        "p99": 581.889,
+        "max": 581.889,
+        "mean": 204.062
+      },
+      "ctrl0": {
+        "min": 3.312,
+        "p50": 221.14,
+        "p90": 314.562,
+        "p95": 429.727,
+        "p99": 565.681,
+        "max": 565.681,
+        "mean": 201.813
+      },
+      "ctrl1": {
+        "min": 5.377,
+        "p50": 222.067,
+        "p90": 308.656,
+        "p95": 403.476,
+        "p99": 566.907,
+        "max": 566.907,
+        "mean": 201.957
+      }
+    },
+    "undetermined_rate": 0.007663,
+    "n_parse_run_error": 0,
+    "total_cpu_s": 110.3
+  },
+  "对照配置": {
+    "D1 主方法（Ê 内全轨迹，双边）": {
+      "recall_k": 210,
+      "recall": 0.853659,
+      "wilson": [
+        0.804058,
+        0.892384
+      ],
+      "fp_k": 0,
+      "fpr": 0.0
+    },
+    "分布外（仅 40 条随机轨迹）": {
+      "recall_k": 196,
+      "recall": 0.796748,
+      "wilson": [
+        0.742078,
+        0.842293
+      ],
+      "fp_k": 0,
+      "fpr": 0.0
+    },
+    "每 5 周期抽样": {
+      "recall_k": 198,
+      "recall": 0.804878,
+      "wilson": [
+        0.750827,
+        0.849553
+      ],
+      "fp_k": 0,
+      "fpr": 0.0
+    },
+    "仅上界（消融锚）": {
+      "recall_k": 210,
+      "recall": 0.853659,
+      "wilson": [
+        0.804058,
+        0.892384
+      ],
+      "fp_k": 0,
+      "fpr": 0.0
+    }
+  },
+  "McNemar_D1_vs_sample5": {
+    "b": 12,
+    "c": 0,
+    "p": 0.00048828
+  },
+  "触发边沿级": {
+    "caveat": "仅契约含 edge 的语料可数：96 条中 31 条，其余 65 条为 always/guard 型，无边沿可数 → 不能作为全库主指标（实验计划 B4 因此改用唯一补丁文件作分母）",
+    "n_pos_cases": 78,
+    "n_specs": 31,
+    "n_events": 1184,
+    "n_events_with_diff": 1143,
+    "n_events_uncovered": 421,
+    "n_events_sample5": 414,
+    "sample5_event_retention": 0.983373,
+    "coverage_specs": 0.322917
+  },
+  "漏检归因": {
+    "n": 36,
+    "by_verdict": {
+      "CONTAINED": 24,
+      "INCOMPLETE": 12
+    },
+    "by_mechanism": {
+      "A 容差内擦边（幅度漂移 < tol）": 23,
+      "B 守卫即注入面（always/guard 型契约）": 13
+    },
+    "by_op": {
+      "O3": 10,
+      "O6": 6,
+      "O2": 18,
+      "O8": 2
+    },
+    "cases": [
+      {
+        "case_id": "pos__conveyor__bad_O3",
+        "verdict": "CONTAINED",
+        "n_diffs": 387,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__conveyor__bad_O6",
+        "verdict": "CONTAINED",
+        "n_diffs": 385,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__enable_lamp_manual__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 10852,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__heat_overtemp_manual__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 10638,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__heat_zone1_manual__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 10825,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__interlock_eject_ready__bad_O8",
+        "verdict": "CONTAINED",
+        "n_diffs": 8896,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__interlock_eject_ready__bad_O8_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 8896,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__interlock_press_manual__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 4170,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__maint_alarm_mute__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 14604,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__maint_lamp_manual__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 14888,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__pulse_stretch__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 33705,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 27195,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch_400ms__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 5951,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch_400ms__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 4641,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch_600ms__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 12821,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch_600ms__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 8863,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch_800ms__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 19800,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pulse_stretch_800ms__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 13004,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pump__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 10915,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pump__bad_O6",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 11905,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pump_softstart_3s__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 9941,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pump_softstart_3s__bad_O6",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 10531,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pump_softstart_4s__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 12930,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__pump_softstart_4s__bad_O6",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 13720,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__standby_alarm_mute__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 11033,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__standby_fault_a__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 10783,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__standby_manual_a__bad_O2_2",
+        "verdict": "CONTAINED",
+        "n_diffs": 11031,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__stardelta__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 808,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__stardelta__bad_O6",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 3627,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__stardelta_ready_bypass__bad_O2",
+        "verdict": "CONTAINED",
+        "n_diffs": 14254,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__stardelta_ready_bypass__bad_O3",
+        "verdict": "CONTAINED",
+        "n_diffs": 4564,
+        "n_unc_points": 0,
+        "mechanism": "B 守卫即注入面（always/guard 型契约）"
+      },
+      {
+        "case_id": "pos__stardelta_switch_6s__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 408,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__stardelta_switch_8s__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 1208,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__stardelta_switch_8s__bad_O6",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 3559,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__tonof_delay__bad_O3",
+        "verdict": "INCOMPLETE",
+        "n_diffs": 554,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      },
+      {
+        "case_id": "pos__tonof_on_1500ms__bad_O3",
+        "verdict": "CONTAINED",
+        "n_diffs": 11378,
+        "n_unc_points": 0,
+        "mechanism": "A 容差内擦边（幅度漂移 < tol）"
+      }
+    ]
+  },
+  "G-D 门禁": {
+    "criterion": "事件级 recall <50% 或 FPR >25% 则触发 Kill 预案",
+    "recall": 0.853659,
+    "fpr": 0.0,
+    "passed": true
+  }
+}

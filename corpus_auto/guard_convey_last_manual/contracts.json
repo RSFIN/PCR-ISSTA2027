@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xAuto",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xPermit",
+        "allow": [
+          "yConv3"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xAuto",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xPermit",
+        "allow": [
+          "yConv3"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xAuto",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xPermit",
+        "allow": [
+          "yConv3"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ],
+        "guard": "xStop"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yConv1",
+          "yConv2",
+          "yConv3",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xAuto",
+        "allow": [
+          "yConv3"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xStop AND xManual AND NOT xPermit",
+        "allow": [
+          "yConv3"
+        ]
+      }
+    ]
+  }
+}

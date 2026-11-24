@@ -1,0 +1,107 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xEStop",
+          "dir": "falling"
+        },
+        "allow": [
+          "yRun"
+        ],
+        "window": [
+          0,
+          200
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 17
+        },
+        "allow": [
+          "yRun"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yRun"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 17
+        },
+        "allow": [
+          "yRun"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xEStop",
+          "dir": "falling"
+        },
+        "allow": [
+          "yRun"
+        ],
+        "window": [
+          0,
+          620
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 17
+        },
+        "allow": [
+          "yRun"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xEStop",
+          "dir": "falling"
+        },
+        "allow": [
+          "yRun"
+        ],
+        "window": [
+          0,
+          620
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 17
+        },
+        "allow": [
+          "yRun"
+        ]
+      }
+    ]
+  }
+}

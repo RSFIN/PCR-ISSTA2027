@@ -1,0 +1,33 @@
+{
+  "change_order": "接通阈值由 80 改为 70；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ],
+        "guard": "rIn >= 70 AND rIn <= 80"
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT basic HYST（滞环比较）语义移植",
+  "undetermined": "E_MEMORY_BOUNDARY",
+  "undetermined_detail": "记忆型输出 ['yQ'] 承载边界差异：值被保持，差异依赖历史而非当前输入，静态区间守卫不可能健全（A5 构造性验证）",
+  "expected_miss": true,
+  "miss_reason": "上界退化为变量级（G0）：窗口与工况守卫两维全部丢失（典型诱因：带记忆的赋值——输出在部分分支不被赋值，差异会延续到静态守卫之外）"
+}

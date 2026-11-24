@@ -1,0 +1,27 @@
+{
+  "change_order": "增加联锁：翻转只允许在 xEn 为真时发生，xEn 为假时保持输出不变；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "Q"
+        ],
+        "guard": "xEn"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "Q"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 400,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT Basic TOGGLE（边沿翻转 + 复位），正文逐字"
+}

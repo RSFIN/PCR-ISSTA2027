@@ -1,0 +1,523 @@
+case_id	arm	spec	patch	op	kind	expected	expected_miss	note
+pos__conc_stage1__bad_O4	pos	conc_stage1	corpus_auto/conc_stage1/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+pos__conc_stage1__bad_O6	pos	conc_stage1	corpus_auto/conc_stage1/bad_O6.st	O6	normal	VIOLATED	0	same-variable-guard
+pos__conc_stage1__bad_O8	pos	conc_stage1	corpus_auto/conc_stage1/bad_O8.st	O8	normal	VIOLATED	0	same-variable-guard
+neg__conc_stage1	neg	conc_stage1	corpus_auto/conc_stage1/good.st	-	normal	CONTAINED	0	
+ctrl0__conc_stage1	ctrl0	conc_stage1	corpus_auto/conc_stage1/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__conc_stage2__bad_O4	pos	conc_stage2	corpus_auto/conc_stage2/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+pos__conc_stage2__bad_O6	pos	conc_stage2	corpus_auto/conc_stage2/bad_O6.st	O6	normal	VIOLATED	0	same-variable-guard
+pos__conc_stage2__bad_O8	pos	conc_stage2	corpus_auto/conc_stage2/bad_O8.st	O8	normal	VIOLATED	0	same-variable-guard
+neg__conc_stage2	neg	conc_stage2	corpus_auto/conc_stage2/good.st	-	normal	CONTAINED	0	
+ctrl0__conc_stage2	ctrl0	conc_stage2	corpus_auto/conc_stage2/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__conveyor__bad_O1	pos	conveyor	corpus_auto/conveyor/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__conveyor__bad_O1_2	pos	conveyor	corpus_auto/conveyor/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__conveyor__bad_O3	pos	conveyor	corpus_auto/conveyor/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__conveyor__bad_O6	pos	conveyor	corpus_auto/conveyor/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__conveyor	neg	conveyor	corpus_auto/conveyor/good.st	-	normal	CONTAINED	0	
+ctrl0__conveyor	ctrl0	conveyor	corpus_auto/conveyor/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__conveyor_debounce_300ms__bad_O3	pos	conveyor_debounce_300ms	corpus_auto/conveyor_debounce_300ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__conveyor_debounce_300ms	neg	conveyor_debounce_300ms	corpus_auto/conveyor_debounce_300ms/good.st	-	normal	CONTAINED	0	
+ctrl0__conveyor_debounce_300ms	ctrl0	conveyor_debounce_300ms	corpus_auto/conveyor_debounce_300ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__conveyor_debounce_400ms__bad_O3	pos	conveyor_debounce_400ms	corpus_auto/conveyor_debounce_400ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__conveyor_debounce_400ms	neg	conveyor_debounce_400ms	corpus_auto/conveyor_debounce_400ms/good.st	-	normal	CONTAINED	0	
+ctrl0__conveyor_debounce_400ms	ctrl0	conveyor_debounce_400ms	corpus_auto/conveyor_debounce_400ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__conveyor_debounce_500ms__bad_O3	pos	conveyor_debounce_500ms	corpus_auto/conveyor_debounce_500ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__conveyor_debounce_500ms	neg	conveyor_debounce_500ms	corpus_auto/conveyor_debounce_500ms/good.st	-	normal	CONTAINED	0	
+ctrl0__conveyor_debounce_500ms	ctrl0	conveyor_debounce_500ms	corpus_auto/conveyor_debounce_500ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__conveyor_fault_rewrite__bad_O2	pos	conveyor_fault_rewrite	corpus_auto/conveyor_fault_rewrite/bad_O2.st	O2	refactor	VIOLATED	0	zero-diff
+pos__conveyor_fault_rewrite__bad_O6	pos	conveyor_fault_rewrite	corpus_auto/conveyor_fault_rewrite/bad_O6.st	O6	refactor	VIOLATED	0	zero-diff
+pos__conveyor_fault_rewrite__bad_O7	pos	conveyor_fault_rewrite	corpus_auto/conveyor_fault_rewrite/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+neg__conveyor_fault_rewrite	neg	conveyor_fault_rewrite	corpus_auto/conveyor_fault_rewrite/good.st	-	refactor	CONTAINED	0	
+ctrl0__conveyor_fault_rewrite	ctrl0	conveyor_fault_rewrite	corpus_auto/conveyor_fault_rewrite/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__conveyor_perm_elim__bad_O2	pos	conveyor_perm_elim	corpus_auto/conveyor_perm_elim/bad_O2.st	O2	refactor	VIOLATED	0	zero-diff
+pos__conveyor_perm_elim__bad_O7	pos	conveyor_perm_elim	corpus_auto/conveyor_perm_elim/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+neg__conveyor_perm_elim	neg	conveyor_perm_elim	corpus_auto/conveyor_perm_elim/good.st	-	refactor	CONTAINED	0	
+ctrl0__conveyor_perm_elim	ctrl0	conveyor_perm_elim	corpus_auto/conveyor_perm_elim/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__edge__bad_O3	pos	edge	corpus_auto/edge/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+pos__edge__bad_O6	pos	edge	corpus_auto/edge/bad_O6.st	O6	normal	VIOLATED	0	same-variable-window
+pos__edge__bad_O8	pos	edge	corpus_auto/edge/bad_O8.st	O8	normal	VIOLATED	0	same-variable-window
+neg__edge	neg	edge	corpus_auto/edge/good.st	-	normal	CONTAINED	0	
+ctrl0__edge	ctrl0	edge	corpus_auto/edge/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__edge_arm_40ms__bad_O3	pos	edge_arm_40ms	corpus_auto/edge_arm_40ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+pos__edge_arm_40ms__bad_O6	pos	edge_arm_40ms	corpus_auto/edge_arm_40ms/bad_O6.st	O6	normal	VIOLATED	0	same-variable-window
+pos__edge_arm_40ms__bad_O8	pos	edge_arm_40ms	corpus_auto/edge_arm_40ms/bad_O8.st	O8	normal	VIOLATED	0	same-variable-window
+neg__edge_arm_40ms	neg	edge_arm_40ms	corpus_auto/edge_arm_40ms/good.st	-	normal	CONTAINED	0	
+ctrl0__edge_arm_40ms	ctrl0	edge_arm_40ms	corpus_auto/edge_arm_40ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__edge_arm_60ms__bad_O3	pos	edge_arm_60ms	corpus_auto/edge_arm_60ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+pos__edge_arm_60ms__bad_O6	pos	edge_arm_60ms	corpus_auto/edge_arm_60ms/bad_O6.st	O6	normal	VIOLATED	0	same-variable-window
+pos__edge_arm_60ms__bad_O8	pos	edge_arm_60ms	corpus_auto/edge_arm_60ms/bad_O8.st	O8	normal	VIOLATED	0	same-variable-window
+neg__edge_arm_60ms	neg	edge_arm_60ms	corpus_auto/edge_arm_60ms/good.st	-	normal	CONTAINED	0	
+ctrl0__edge_arm_60ms	ctrl0	edge_arm_60ms	corpus_auto/edge_arm_60ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__edge_arm_elim__bad_O7	pos	edge_arm_elim	corpus_auto/edge_arm_elim/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+pos__edge_arm_elim__bad_O8	pos	edge_arm_elim	corpus_auto/edge_arm_elim/bad_O8.st	O8	refactor	VIOLATED	0	zero-diff
+neg__edge_arm_elim	neg	edge_arm_elim	corpus_auto/edge_arm_elim/good.st	-	refactor	CONTAINED	0	
+ctrl0__edge_arm_elim	ctrl0	edge_arm_elim	corpus_auto/edge_arm_elim/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__enable_heat_manual__bad_O1	pos	enable_heat_manual	corpus_auto/enable_heat_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__enable_heat_manual__bad_O1_2	pos	enable_heat_manual	corpus_auto/enable_heat_manual/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__enable_heat_manual__bad_O2	pos	enable_heat_manual	corpus_auto/enable_heat_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+neg__enable_heat_manual	neg	enable_heat_manual	corpus_auto/enable_heat_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__enable_heat_manual	ctrl0	enable_heat_manual	corpus_auto/enable_heat_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__enable_lamp_auto__bad_O1	pos	enable_lamp_auto	corpus_auto/enable_lamp_auto/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__enable_lamp_auto__bad_O1_2	pos	enable_lamp_auto	corpus_auto/enable_lamp_auto/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__enable_lamp_auto__bad_O2	pos	enable_lamp_auto	corpus_auto/enable_lamp_auto/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__enable_lamp_auto__bad_O2_2	pos	enable_lamp_auto	corpus_auto/enable_lamp_auto/bad_O2_2.st	O2	normal	VIOLATED	0	cross-variable
+neg__enable_lamp_auto	neg	enable_lamp_auto	corpus_auto/enable_lamp_auto/good.st	-	normal	CONTAINED	0	
+ctrl0__enable_lamp_auto	ctrl0	enable_lamp_auto	corpus_auto/enable_lamp_auto/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__enable_lamp_manual__bad_O1	pos	enable_lamp_manual	corpus_auto/enable_lamp_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__enable_lamp_manual__bad_O1_2	pos	enable_lamp_manual	corpus_auto/enable_lamp_manual/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__enable_lamp_manual__bad_O2	pos	enable_lamp_manual	corpus_auto/enable_lamp_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__enable_lamp_manual__bad_O2_2	pos	enable_lamp_manual	corpus_auto/enable_lamp_manual/bad_O2_2.st	O2	normal	VIOLATED	0	cross-variable
+neg__enable_lamp_manual	neg	enable_lamp_manual	corpus_auto/enable_lamp_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__enable_lamp_manual	ctrl0	enable_lamp_manual	corpus_auto/enable_lamp_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__fan_purge_4s__bad_O1	pos	fan_purge_4s	corpus_auto/fan_purge_4s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__fan_purge_4s__bad_O3	pos	fan_purge_4s	corpus_auto/fan_purge_4s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+neg__fan_purge_4s	neg	fan_purge_4s	corpus_auto/fan_purge_4s/good.st	-	normal	CONTAINED	0	
+ctrl0__fan_purge_4s	ctrl0	fan_purge_4s	corpus_auto/fan_purge_4s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__fan_purge_5s__bad_O1	pos	fan_purge_5s	corpus_auto/fan_purge_5s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__fan_purge_5s__bad_O3	pos	fan_purge_5s	corpus_auto/fan_purge_5s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+neg__fan_purge_5s	neg	fan_purge_5s	corpus_auto/fan_purge_5s/good.st	-	normal	CONTAINED	0	
+ctrl0__fan_purge_5s	ctrl0	fan_purge_5s	corpus_auto/fan_purge_5s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__fan_purge_6s__bad_O1	pos	fan_purge_6s	corpus_auto/fan_purge_6s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__fan_purge_6s__bad_O3	pos	fan_purge_6s	corpus_auto/fan_purge_6s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+neg__fan_purge_6s	neg	fan_purge_6s	corpus_auto/fan_purge_6s/good.st	-	normal	CONTAINED	0	
+ctrl0__fan_purge_6s	ctrl0	fan_purge_6s	corpus_auto/fan_purge_6s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__flow_low__bad_O8	pos	flow_low	corpus_auto/flow_low/bad_O8.st	O8	normal	VIOLATED	0	same-variable-guard
+neg__flow_low	neg	flow_low	corpus_auto/flow_low/good.st	-	normal	CONTAINED	0	
+ctrl0__flow_low	ctrl0	flow_low	corpus_auto/flow_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__gate__bad_O3	pos	gate	corpus_auto/gate/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__gate	neg	gate	corpus_auto/gate/good.st	-	normal	CONTAINED	0	
+ctrl0__gate	ctrl0	gate	corpus_auto/gate/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__gate_hold_1200ms__bad_O3	pos	gate_hold_1200ms	corpus_auto/gate_hold_1200ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__gate_hold_1200ms	neg	gate_hold_1200ms	corpus_auto/gate_hold_1200ms/good.st	-	normal	CONTAINED	0	
+ctrl0__gate_hold_1200ms	ctrl0	gate_hold_1200ms	corpus_auto/gate_hold_1200ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__gate_hold_1500ms__bad_O3	pos	gate_hold_1500ms	corpus_auto/gate_hold_1500ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__gate_hold_1500ms	neg	gate_hold_1500ms	corpus_auto/gate_hold_1500ms/good.st	-	normal	CONTAINED	0	
+ctrl0__gate_hold_1500ms	ctrl0	gate_hold_1500ms	corpus_auto/gate_hold_1500ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__gate_hold_1s__bad_O3	pos	gate_hold_1s	corpus_auto/gate_hold_1s/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__gate_hold_1s	neg	gate_hold_1s	corpus_auto/gate_hold_1s/good.st	-	normal	CONTAINED	0	
+ctrl0__gate_hold_1s	ctrl0	gate_hold_1s	corpus_auto/gate_hold_1s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_chiller_bypass_flow__bad_O2	pos	guard_chiller_bypass_flow	corpus_auto/guard_chiller_bypass_flow/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_chiller_bypass_flow__bad_O2_2	pos	guard_chiller_bypass_flow	corpus_auto/guard_chiller_bypass_flow/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_chiller_bypass_flow	neg	guard_chiller_bypass_flow	corpus_auto/guard_chiller_bypass_flow/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_chiller_bypass_flow	ctrl0	guard_chiller_bypass_flow	corpus_auto/guard_chiller_bypass_flow/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_clean_brush_water__bad_O2	pos	guard_clean_brush_water	corpus_auto/guard_clean_brush_water/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_clean_brush_water__bad_O2_2	pos	guard_clean_brush_water	corpus_auto/guard_clean_brush_water/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_clean_brush_water	neg	guard_clean_brush_water	corpus_auto/guard_clean_brush_water/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_clean_brush_water	ctrl0	guard_clean_brush_water	corpus_auto/guard_clean_brush_water/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_comp_unload_oil__bad_O2	pos	guard_comp_unload_oil	corpus_auto/guard_comp_unload_oil/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_comp_unload_oil__bad_O2_2	pos	guard_comp_unload_oil	corpus_auto/guard_comp_unload_oil/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_comp_unload_oil	neg	guard_comp_unload_oil	corpus_auto/guard_comp_unload_oil/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_comp_unload_oil	ctrl0	guard_comp_unload_oil	corpus_auto/guard_comp_unload_oil/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_convey_last_manual__bad_O8	pos	guard_convey_last_manual	corpus_auto/guard_convey_last_manual/bad_O8.st	O8	normal	VIOLATED	0	same-variable-guard
+pos__guard_convey_last_manual__bad_O8_2	pos	guard_convey_last_manual	corpus_auto/guard_convey_last_manual/bad_O8_2.st	O8	normal	VIOLATED	0	same-variable-guard
+neg__guard_convey_last_manual	neg	guard_convey_last_manual	corpus_auto/guard_convey_last_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_convey_last_manual	ctrl0	guard_convey_last_manual	corpus_auto/guard_convey_last_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_fan_temp_low__bad_O2	pos	guard_fan_temp_low	corpus_auto/guard_fan_temp_low/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_fan_temp_low__bad_O2_2	pos	guard_fan_temp_low	corpus_auto/guard_fan_temp_low/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_fan_temp_low	neg	guard_fan_temp_low	corpus_auto/guard_fan_temp_low/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_fan_temp_low	ctrl0	guard_fan_temp_low	corpus_auto/guard_fan_temp_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_feeder_level_low__bad_O2	pos	guard_feeder_level_low	corpus_auto/guard_feeder_level_low/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_feeder_level_low__bad_O2_2	pos	guard_feeder_level_low	corpus_auto/guard_feeder_level_low/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_feeder_level_low	neg	guard_feeder_level_low	corpus_auto/guard_feeder_level_low/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_feeder_level_low	ctrl0	guard_feeder_level_low	corpus_auto/guard_feeder_level_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_lift_lock_door__bad_O2	pos	guard_lift_lock_door	corpus_auto/guard_lift_lock_door/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_lift_lock_door__bad_O2_2	pos	guard_lift_lock_door	corpus_auto/guard_lift_lock_door/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_lift_lock_door	neg	guard_lift_lock_door	corpus_auto/guard_lift_lock_door/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_lift_lock_door	ctrl0	guard_lift_lock_door	corpus_auto/guard_lift_lock_door/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_mixer_dis_cover__bad_O2	pos	guard_mixer_dis_cover	corpus_auto/guard_mixer_dis_cover/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_mixer_dis_cover__bad_O2_2	pos	guard_mixer_dis_cover	corpus_auto/guard_mixer_dis_cover/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_mixer_dis_cover	neg	guard_mixer_dis_cover	corpus_auto/guard_mixer_dis_cover/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_mixer_dis_cover	ctrl0	guard_mixer_dis_cover	corpus_auto/guard_mixer_dis_cover/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_pack_index_film__bad_O2	pos	guard_pack_index_film	corpus_auto/guard_pack_index_film/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_pack_index_film__bad_O2_2	pos	guard_pack_index_film	corpus_auto/guard_pack_index_film/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_pack_index_film	neg	guard_pack_index_film	corpus_auto/guard_pack_index_film/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_pack_index_film	ctrl0	guard_pack_index_film	corpus_auto/guard_pack_index_film/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_press_retract_door__bad_O2	pos	guard_press_retract_door	corpus_auto/guard_press_retract_door/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_press_retract_door__bad_O2_2	pos	guard_press_retract_door	corpus_auto/guard_press_retract_door/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_press_retract_door	neg	guard_press_retract_door	corpus_auto/guard_press_retract_door/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_press_retract_door	ctrl0	guard_press_retract_door	corpus_auto/guard_press_retract_door/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_pump_c_fault__bad_O8	pos	guard_pump_c_fault	corpus_auto/guard_pump_c_fault/bad_O8.st	O8	normal	VIOLATED	0	same-variable-guard
+pos__guard_pump_c_fault__bad_O8_2	pos	guard_pump_c_fault	corpus_auto/guard_pump_c_fault/bad_O8_2.st	O8	normal	VIOLATED	0	same-variable-guard
+neg__guard_pump_c_fault	neg	guard_pump_c_fault	corpus_auto/guard_pump_c_fault/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_pump_c_fault	ctrl0	guard_pump_c_fault	corpus_auto/guard_pump_c_fault/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_robot_home_servo__bad_O2	pos	guard_robot_home_servo	corpus_auto/guard_robot_home_servo/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_robot_home_servo__bad_O2_2	pos	guard_robot_home_servo	corpus_auto/guard_robot_home_servo/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_robot_home_servo	neg	guard_robot_home_servo	corpus_auto/guard_robot_home_servo/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_robot_home_servo	ctrl0	guard_robot_home_servo	corpus_auto/guard_robot_home_servo/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_sorter_gate_jam__bad_O8	pos	guard_sorter_gate_jam	corpus_auto/guard_sorter_gate_jam/bad_O8.st	O8	normal	VIOLATED	0	same-variable-guard
+pos__guard_sorter_gate_jam__bad_O8_2	pos	guard_sorter_gate_jam	corpus_auto/guard_sorter_gate_jam/bad_O8_2.st	O8	normal	VIOLATED	0	same-variable-guard
+neg__guard_sorter_gate_jam	neg	guard_sorter_gate_jam	corpus_auto/guard_sorter_gate_jam/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_sorter_gate_jam	ctrl0	guard_sorter_gate_jam	corpus_auto/guard_sorter_gate_jam/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_stack_clamp_zone__bad_O2	pos	guard_stack_clamp_zone	corpus_auto/guard_stack_clamp_zone/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_stack_clamp_zone__bad_O2_2	pos	guard_stack_clamp_zone	corpus_auto/guard_stack_clamp_zone/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_stack_clamp_zone	neg	guard_stack_clamp_zone	corpus_auto/guard_stack_clamp_zone/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_stack_clamp_zone	ctrl0	guard_stack_clamp_zone	corpus_auto/guard_stack_clamp_zone/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__guard_valve_a_manual__bad_O2	pos	guard_valve_a_manual	corpus_auto/guard_valve_a_manual/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__guard_valve_a_manual__bad_O2_2	pos	guard_valve_a_manual	corpus_auto/guard_valve_a_manual/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+neg__guard_valve_a_manual	neg	guard_valve_a_manual	corpus_auto/guard_valve_a_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__guard_valve_a_manual	ctrl0	guard_valve_a_manual	corpus_auto/guard_valve_a_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__heat_off__bad_O4	pos	heat_off	corpus_auto/heat_off/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__heat_off	neg	heat_off	corpus_auto/heat_off/good.st	-	normal	CONTAINED	0	
+ctrl0__heat_off	ctrl0	heat_off	corpus_auto/heat_off/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__heat_on__bad_O4	pos	heat_on	corpus_auto/heat_on/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__heat_on	neg	heat_on	corpus_auto/heat_on/good.st	-	normal	CONTAINED	0	
+ctrl0__heat_on	ctrl0	heat_on	corpus_auto/heat_on/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__heat_overtemp_manual__bad_O1	pos	heat_overtemp_manual	corpus_auto/heat_overtemp_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__heat_overtemp_manual__bad_O1_2	pos	heat_overtemp_manual	corpus_auto/heat_overtemp_manual/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__heat_overtemp_manual__bad_O2	pos	heat_overtemp_manual	corpus_auto/heat_overtemp_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__heat_overtemp_manual__bad_O4	pos	heat_overtemp_manual	corpus_auto/heat_overtemp_manual/bad_O4.st	O4	normal	VIOLATED	0	cross-variable
+neg__heat_overtemp_manual	neg	heat_overtemp_manual	corpus_auto/heat_overtemp_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__heat_overtemp_manual	ctrl0	heat_overtemp_manual	corpus_auto/heat_overtemp_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__heat_zone1_manual__bad_O1	pos	heat_zone1_manual	corpus_auto/heat_zone1_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__heat_zone1_manual__bad_O1_2	pos	heat_zone1_manual	corpus_auto/heat_zone1_manual/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__heat_zone1_manual__bad_O2	pos	heat_zone1_manual	corpus_auto/heat_zone1_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__heat_zone1_manual__bad_O4	pos	heat_zone1_manual	corpus_auto/heat_zone1_manual/bad_O4.st	O4	normal	VIOLATED	0	cross-variable
+neg__heat_zone1_manual	neg	heat_zone1_manual	corpus_auto/heat_zone1_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__heat_zone1_manual	ctrl0	heat_zone1_manual	corpus_auto/heat_zone1_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__hyst_band__bad_O4	pos	hyst_band	corpus_auto/hyst_band/bad_O4.st	O4	normal	VIOLATED	1	same-variable-guard
+neg__hyst_band	neg	hyst_band	corpus_auto/hyst_band/good.st	-	normal	CONTAINED	1	
+ctrl0__hyst_band	ctrl0	hyst_band	corpus_auto/hyst_band/orig.st	-	normal	NOT_VIOLATED	1	empty change
+pos__hyst_connect__bad_O4	pos	hyst_connect	corpus_auto/hyst_connect/bad_O4.st	O4	normal	VIOLATED	1	same-variable-guard
+neg__hyst_connect	neg	hyst_connect	corpus_auto/hyst_connect/good.st	-	normal	CONTAINED	1	
+ctrl0__hyst_connect	ctrl0	hyst_connect	corpus_auto/hyst_connect/orig.st	-	normal	NOT_VIOLATED	1	empty change
+pos__hyst_nest__bad_O4	pos	hyst_nest	corpus_auto/hyst_nest/bad_O4.st	O4	refactor	VIOLATED	0	zero-diff
+pos__hyst_nest__bad_O4_2	pos	hyst_nest	corpus_auto/hyst_nest/bad_O4_2.st	O4	refactor	VIOLATED	0	zero-diff
+pos__hyst_nest__bad_O7	pos	hyst_nest	corpus_auto/hyst_nest/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+pos__hyst_nest__bad_O7_2	pos	hyst_nest	corpus_auto/hyst_nest/bad_O7_2.st	O7	refactor	VIOLATED	0	zero-diff
+neg__hyst_nest	neg	hyst_nest	corpus_auto/hyst_nest/good.st	-	refactor	CONTAINED	0	
+ctrl0__hyst_nest	ctrl0	hyst_nest	corpus_auto/hyst_nest/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__indexer_edge_refactor__bad_O2	pos	indexer_edge_refactor	corpus_auto/indexer_edge_refactor/bad_O2.st	O2	refactor	VIOLATED	0	zero-diff
+pos__indexer_edge_refactor__bad_O3	pos	indexer_edge_refactor	corpus_auto/indexer_edge_refactor/bad_O3.st	O3	refactor	VIOLATED	0	zero-diff
+pos__indexer_edge_refactor__bad_O7	pos	indexer_edge_refactor	corpus_auto/indexer_edge_refactor/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+neg__indexer_edge_refactor	neg	indexer_edge_refactor	corpus_auto/indexer_edge_refactor/good.st	-	refactor	CONTAINED	0	
+ctrl0__indexer_edge_refactor	ctrl0	indexer_edge_refactor	corpus_auto/indexer_edge_refactor/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__indexer_ready_1800ms__bad_O1	pos	indexer_ready_1800ms	corpus_auto/indexer_ready_1800ms/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__indexer_ready_1800ms__bad_O3	pos	indexer_ready_1800ms	corpus_auto/indexer_ready_1800ms/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__indexer_ready_1800ms__bad_O5	pos	indexer_ready_1800ms	corpus_auto/indexer_ready_1800ms/bad_O5.st	O5	normal	VIOLATED	0	cross-variable
+neg__indexer_ready_1800ms	neg	indexer_ready_1800ms	corpus_auto/indexer_ready_1800ms/good.st	-	normal	CONTAINED	0	
+ctrl0__indexer_ready_1800ms	ctrl0	indexer_ready_1800ms	corpus_auto/indexer_ready_1800ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__indexer_ready_2500ms__bad_O1	pos	indexer_ready_2500ms	corpus_auto/indexer_ready_2500ms/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__indexer_ready_2500ms__bad_O3	pos	indexer_ready_2500ms	corpus_auto/indexer_ready_2500ms/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__indexer_ready_2500ms__bad_O5	pos	indexer_ready_2500ms	corpus_auto/indexer_ready_2500ms/bad_O5.st	O5	normal	VIOLATED	0	cross-variable
+neg__indexer_ready_2500ms	neg	indexer_ready_2500ms	corpus_auto/indexer_ready_2500ms/good.st	-	normal	CONTAINED	0	
+ctrl0__indexer_ready_2500ms	ctrl0	indexer_ready_2500ms	corpus_auto/indexer_ready_2500ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__indexer_ready_2s__bad_O1	pos	indexer_ready_2s	corpus_auto/indexer_ready_2s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__indexer_ready_2s__bad_O3	pos	indexer_ready_2s	corpus_auto/indexer_ready_2s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__indexer_ready_2s__bad_O5	pos	indexer_ready_2s	corpus_auto/indexer_ready_2s/bad_O5.st	O5	normal	VIOLATED	0	cross-variable
+neg__indexer_ready_2s	neg	indexer_ready_2s	corpus_auto/indexer_ready_2s/good.st	-	normal	CONTAINED	0	
+ctrl0__indexer_ready_2s	ctrl0	indexer_ready_2s	corpus_auto/indexer_ready_2s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__interlock_clamp_manual__bad_O1	pos	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_manual__bad_O1_2	pos	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_manual__bad_O2	pos	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_manual__bad_O8	pos	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_manual__bad_O8_2	pos	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/bad_O8_2.st	O8	normal	VIOLATED	0	cross-variable
+neg__interlock_clamp_manual	neg	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__interlock_clamp_manual	ctrl0	interlock_clamp_manual	corpus_auto/interlock_clamp_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__interlock_clamp_overload__bad_O1	pos	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload__bad_O1_2	pos	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload__bad_O2	pos	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload__bad_O8	pos	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload__bad_O8_2	pos	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/bad_O8_2.st	O8	normal	VIOLATED	0	cross-variable
+neg__interlock_clamp_overload	neg	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/good.st	-	normal	CONTAINED	0	
+ctrl0__interlock_clamp_overload	ctrl0	interlock_clamp_overload	corpus_auto/interlock_clamp_overload/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__interlock_clamp_overload_v2__bad_O1	pos	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload_v2__bad_O1_2	pos	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload_v2__bad_O2	pos	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload_v2__bad_O8	pos	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+pos__interlock_clamp_overload_v2__bad_O8_2	pos	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/bad_O8_2.st	O8	normal	VIOLATED	0	cross-variable
+neg__interlock_clamp_overload_v2	neg	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/good.st	-	normal	CONTAINED	0	
+ctrl0__interlock_clamp_overload_v2	ctrl0	interlock_clamp_overload_v2	corpus_auto/interlock_clamp_overload_v2/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__interlock_eject_ready__bad_O1	pos	interlock_eject_ready	corpus_auto/interlock_eject_ready/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_eject_ready__bad_O1_2	pos	interlock_eject_ready	corpus_auto/interlock_eject_ready/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_eject_ready__bad_O2	pos	interlock_eject_ready	corpus_auto/interlock_eject_ready/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__interlock_eject_ready__bad_O8	pos	interlock_eject_ready	corpus_auto/interlock_eject_ready/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+pos__interlock_eject_ready__bad_O8_2	pos	interlock_eject_ready	corpus_auto/interlock_eject_ready/bad_O8_2.st	O8	normal	VIOLATED	0	cross-variable
+neg__interlock_eject_ready	neg	interlock_eject_ready	corpus_auto/interlock_eject_ready/good.st	-	normal	CONTAINED	0	
+ctrl0__interlock_eject_ready	ctrl0	interlock_eject_ready	corpus_auto/interlock_eject_ready/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__interlock_press_manual__bad_O1	pos	interlock_press_manual	corpus_auto/interlock_press_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_press_manual__bad_O1_2	pos	interlock_press_manual	corpus_auto/interlock_press_manual/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__interlock_press_manual__bad_O2	pos	interlock_press_manual	corpus_auto/interlock_press_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__interlock_press_manual__bad_O8	pos	interlock_press_manual	corpus_auto/interlock_press_manual/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+pos__interlock_press_manual__bad_O8_2	pos	interlock_press_manual	corpus_auto/interlock_press_manual/bad_O8_2.st	O8	normal	VIOLATED	0	cross-variable
+neg__interlock_press_manual	neg	interlock_press_manual	corpus_auto/interlock_press_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__interlock_press_manual	ctrl0	interlock_press_manual	corpus_auto/interlock_press_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__level3_high__bad_O4	pos	level3_high	corpus_auto/level3_high/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__level3_high	neg	level3_high	corpus_auto/level3_high/good.st	-	normal	CONTAINED	0	
+ctrl0__level3_high	ctrl0	level3_high	corpus_auto/level3_high/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__level3_low__bad_O4	pos	level3_low	corpus_auto/level3_low/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__level3_low	neg	level3_low	corpus_auto/level3_low/good.st	-	normal	CONTAINED	0	
+ctrl0__level3_low	ctrl0	level3_low	corpus_auto/level3_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__maint_alarm_mute__bad_O1	pos	maint_alarm_mute	corpus_auto/maint_alarm_mute/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__maint_alarm_mute__bad_O2	pos	maint_alarm_mute	corpus_auto/maint_alarm_mute/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__maint_alarm_mute__bad_O2_2	pos	maint_alarm_mute	corpus_auto/maint_alarm_mute/bad_O2_2.st	O2	normal	VIOLATED	0	cross-variable
+neg__maint_alarm_mute	neg	maint_alarm_mute	corpus_auto/maint_alarm_mute/good.st	-	normal	CONTAINED	0	
+ctrl0__maint_alarm_mute	ctrl0	maint_alarm_mute	corpus_auto/maint_alarm_mute/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__maint_lamp_manual__bad_O1	pos	maint_lamp_manual	corpus_auto/maint_lamp_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__maint_lamp_manual__bad_O2	pos	maint_lamp_manual	corpus_auto/maint_lamp_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__maint_lamp_manual__bad_O2_2	pos	maint_lamp_manual	corpus_auto/maint_lamp_manual/bad_O2_2.st	O2	normal	VIOLATED	0	cross-variable
+neg__maint_lamp_manual	neg	maint_lamp_manual	corpus_auto/maint_lamp_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__maint_lamp_manual	ctrl0	maint_lamp_manual	corpus_auto/maint_lamp_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__press_high__bad_O2	pos	press_high	corpus_auto/press_high/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__press_high__bad_O2_2	pos	press_high	corpus_auto/press_high/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__press_high__bad_O4	pos	press_high	corpus_auto/press_high/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+pos__press_high__bad_O6	pos	press_high	corpus_auto/press_high/bad_O6.st	O6	normal	VIOLATED	0	same-variable-guard
+neg__press_high	neg	press_high	corpus_auto/press_high/good.st	-	normal	CONTAINED	0	
+ctrl0__press_high	ctrl0	press_high	corpus_auto/press_high/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__press_low__bad_O2	pos	press_low	corpus_auto/press_low/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__press_low__bad_O2_2	pos	press_low	corpus_auto/press_low/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__press_low__bad_O4	pos	press_low	corpus_auto/press_low/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+pos__press_low__bad_O6	pos	press_low	corpus_auto/press_low/bad_O6.st	O6	normal	VIOLATED	0	same-variable-guard
+neg__press_low	neg	press_low	corpus_auto/press_low/good.st	-	normal	CONTAINED	0	
+ctrl0__press_low	ctrl0	press_low	corpus_auto/press_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pulse_stretch__bad_O2	pos	pulse_stretch	corpus_auto/pulse_stretch/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch__bad_O2_2	pos	pulse_stretch	corpus_auto/pulse_stretch/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch__bad_O3	pos	pulse_stretch	corpus_auto/pulse_stretch/bad_O3.st	O3	normal	VIOLATED	0	same-variable-guard
+neg__pulse_stretch	neg	pulse_stretch	corpus_auto/pulse_stretch/good.st	-	normal	CONTAINED	0	
+ctrl0__pulse_stretch	ctrl0	pulse_stretch	corpus_auto/pulse_stretch/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pulse_stretch_400ms__bad_O2	pos	pulse_stretch_400ms	corpus_auto/pulse_stretch_400ms/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch_400ms__bad_O2_2	pos	pulse_stretch_400ms	corpus_auto/pulse_stretch_400ms/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch_400ms__bad_O3	pos	pulse_stretch_400ms	corpus_auto/pulse_stretch_400ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-guard
+neg__pulse_stretch_400ms	neg	pulse_stretch_400ms	corpus_auto/pulse_stretch_400ms/good.st	-	normal	CONTAINED	0	
+ctrl0__pulse_stretch_400ms	ctrl0	pulse_stretch_400ms	corpus_auto/pulse_stretch_400ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pulse_stretch_600ms__bad_O2	pos	pulse_stretch_600ms	corpus_auto/pulse_stretch_600ms/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch_600ms__bad_O2_2	pos	pulse_stretch_600ms	corpus_auto/pulse_stretch_600ms/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch_600ms__bad_O3	pos	pulse_stretch_600ms	corpus_auto/pulse_stretch_600ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-guard
+neg__pulse_stretch_600ms	neg	pulse_stretch_600ms	corpus_auto/pulse_stretch_600ms/good.st	-	normal	CONTAINED	0	
+ctrl0__pulse_stretch_600ms	ctrl0	pulse_stretch_600ms	corpus_auto/pulse_stretch_600ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pulse_stretch_800ms__bad_O2	pos	pulse_stretch_800ms	corpus_auto/pulse_stretch_800ms/bad_O2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch_800ms__bad_O2_2	pos	pulse_stretch_800ms	corpus_auto/pulse_stretch_800ms/bad_O2_2.st	O2	normal	VIOLATED	0	same-variable-guard
+pos__pulse_stretch_800ms__bad_O3	pos	pulse_stretch_800ms	corpus_auto/pulse_stretch_800ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-guard
+neg__pulse_stretch_800ms	neg	pulse_stretch_800ms	corpus_auto/pulse_stretch_800ms/good.st	-	normal	CONTAINED	0	
+ctrl0__pulse_stretch_800ms	ctrl0	pulse_stretch_800ms	corpus_auto/pulse_stretch_800ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pump__bad_O1	pos	pump	corpus_auto/pump/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump__bad_O1_2	pos	pump	corpus_auto/pump/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump__bad_O2	pos	pump	corpus_auto/pump/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__pump__bad_O3	pos	pump	corpus_auto/pump/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__pump__bad_O6	pos	pump	corpus_auto/pump/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__pump	neg	pump	corpus_auto/pump/good.st	-	normal	CONTAINED	0	
+ctrl0__pump	ctrl0	pump	corpus_auto/pump/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pump_fault_jog__bad_O1	pos	pump_fault_jog	corpus_auto/pump_fault_jog/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_fault_jog__bad_O1_2	pos	pump_fault_jog	corpus_auto/pump_fault_jog/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_fault_jog__bad_O2	pos	pump_fault_jog	corpus_auto/pump_fault_jog/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__pump_fault_jog__bad_O3	pos	pump_fault_jog	corpus_auto/pump_fault_jog/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__pump_fault_jog__bad_O6	pos	pump_fault_jog	corpus_auto/pump_fault_jog/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__pump_fault_jog	neg	pump_fault_jog	corpus_auto/pump_fault_jog/good.st	-	normal	CONTAINED	0	
+ctrl0__pump_fault_jog	ctrl0	pump_fault_jog	corpus_auto/pump_fault_jog/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pump_manual_interlock__bad_O1	pos	pump_manual_interlock	corpus_auto/pump_manual_interlock/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_manual_interlock__bad_O1_2	pos	pump_manual_interlock	corpus_auto/pump_manual_interlock/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_manual_interlock__bad_O2	pos	pump_manual_interlock	corpus_auto/pump_manual_interlock/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__pump_manual_interlock__bad_O3	pos	pump_manual_interlock	corpus_auto/pump_manual_interlock/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__pump_manual_interlock__bad_O6	pos	pump_manual_interlock	corpus_auto/pump_manual_interlock/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__pump_manual_interlock	neg	pump_manual_interlock	corpus_auto/pump_manual_interlock/good.st	-	normal	CONTAINED	0	
+ctrl0__pump_manual_interlock	ctrl0	pump_manual_interlock	corpus_auto/pump_manual_interlock/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pump_softstart_3s__bad_O1	pos	pump_softstart_3s	corpus_auto/pump_softstart_3s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_3s__bad_O1_2	pos	pump_softstart_3s	corpus_auto/pump_softstart_3s/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_3s__bad_O2	pos	pump_softstart_3s	corpus_auto/pump_softstart_3s/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_3s__bad_O3	pos	pump_softstart_3s	corpus_auto/pump_softstart_3s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_3s__bad_O6	pos	pump_softstart_3s	corpus_auto/pump_softstart_3s/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__pump_softstart_3s	neg	pump_softstart_3s	corpus_auto/pump_softstart_3s/good.st	-	normal	CONTAINED	0	
+ctrl0__pump_softstart_3s	ctrl0	pump_softstart_3s	corpus_auto/pump_softstart_3s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pump_softstart_4s__bad_O1	pos	pump_softstart_4s	corpus_auto/pump_softstart_4s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_4s__bad_O1_2	pos	pump_softstart_4s	corpus_auto/pump_softstart_4s/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_4s__bad_O2	pos	pump_softstart_4s	corpus_auto/pump_softstart_4s/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_4s__bad_O3	pos	pump_softstart_4s	corpus_auto/pump_softstart_4s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__pump_softstart_4s__bad_O6	pos	pump_softstart_4s	corpus_auto/pump_softstart_4s/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__pump_softstart_4s	neg	pump_softstart_4s	corpus_auto/pump_softstart_4s/good.st	-	normal	CONTAINED	0	
+ctrl0__pump_softstart_4s	ctrl0	pump_softstart_4s	corpus_auto/pump_softstart_4s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__pump_valve_rewrite__bad_O3	pos	pump_valve_rewrite	corpus_auto/pump_valve_rewrite/bad_O3.st	O3	refactor	VIOLATED	0	zero-diff
+pos__pump_valve_rewrite__bad_O7	pos	pump_valve_rewrite	corpus_auto/pump_valve_rewrite/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+neg__pump_valve_rewrite	neg	pump_valve_rewrite	corpus_auto/pump_valve_rewrite/good.st	-	refactor	CONTAINED	0	
+ctrl0__pump_valve_rewrite	ctrl0	pump_valve_rewrite	corpus_auto/pump_valve_rewrite/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__refactor__bad_O7	pos	refactor	corpus_auto/refactor/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+neg__refactor	neg	refactor	corpus_auto/refactor/good.st	-	refactor	CONTAINED	0	
+ctrl0__refactor	ctrl0	refactor	corpus_auto/refactor/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__seq__bad_O2	pos	seq	corpus_auto/seq/bad_O2.st	O2	refactor	VIOLATED	0	same-variable-guard
+pos__seq__bad_O6	pos	seq	corpus_auto/seq/bad_O6.st	O6	refactor	VIOLATED	0	same-variable-guard
+neg__seq	neg	seq	corpus_auto/seq/good.st	-	refactor	CONTAINED	0	
+ctrl0__seq	ctrl0	seq	corpus_auto/seq/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__silo_low__bad_O4	pos	silo_low	corpus_auto/silo_low/bad_O4.st	O4	normal	VIOLATED	1	same-variable-guard
+neg__silo_low	neg	silo_low	corpus_auto/silo_low/good.st	-	normal	CONTAINED	1	
+ctrl0__silo_low	ctrl0	silo_low	corpus_auto/silo_low/orig.st	-	normal	NOT_VIOLATED	1	empty change
+pos__soc_high__bad_O4	pos	soc_high	corpus_auto/soc_high/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__soc_high	neg	soc_high	corpus_auto/soc_high/good.st	-	normal	CONTAINED	0	
+ctrl0__soc_high	ctrl0	soc_high	corpus_auto/soc_high/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__soc_low__bad_O4	pos	soc_low	corpus_auto/soc_low/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__soc_low	neg	soc_low	corpus_auto/soc_low/good.st	-	normal	CONTAINED	0	
+ctrl0__soc_low	ctrl0	soc_low	corpus_auto/soc_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__soc_under__bad_O4	pos	soc_under	corpus_auto/soc_under/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__soc_under	neg	soc_under	corpus_auto/soc_under/good.st	-	normal	CONTAINED	0	
+ctrl0__soc_under	ctrl0	soc_under	corpus_auto/soc_under/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__standby_alarm_mute__bad_O1	pos	standby_alarm_mute	corpus_auto/standby_alarm_mute/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__standby_alarm_mute__bad_O1_2	pos	standby_alarm_mute	corpus_auto/standby_alarm_mute/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__standby_alarm_mute__bad_O2	pos	standby_alarm_mute	corpus_auto/standby_alarm_mute/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__standby_alarm_mute__bad_O8	pos	standby_alarm_mute	corpus_auto/standby_alarm_mute/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+neg__standby_alarm_mute	neg	standby_alarm_mute	corpus_auto/standby_alarm_mute/good.st	-	normal	CONTAINED	0	
+ctrl0__standby_alarm_mute	ctrl0	standby_alarm_mute	corpus_auto/standby_alarm_mute/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__standby_fault_a__bad_O1	pos	standby_fault_a	corpus_auto/standby_fault_a/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__standby_fault_a__bad_O1_2	pos	standby_fault_a	corpus_auto/standby_fault_a/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__standby_fault_a__bad_O2	pos	standby_fault_a	corpus_auto/standby_fault_a/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__standby_fault_a__bad_O2_2	pos	standby_fault_a	corpus_auto/standby_fault_a/bad_O2_2.st	O2	normal	VIOLATED	0	cross-variable
+pos__standby_fault_a__bad_O8	pos	standby_fault_a	corpus_auto/standby_fault_a/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+neg__standby_fault_a	neg	standby_fault_a	corpus_auto/standby_fault_a/good.st	-	normal	CONTAINED	0	
+ctrl0__standby_fault_a	ctrl0	standby_fault_a	corpus_auto/standby_fault_a/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__standby_manual_a__bad_O1	pos	standby_manual_a	corpus_auto/standby_manual_a/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__standby_manual_a__bad_O1_2	pos	standby_manual_a	corpus_auto/standby_manual_a/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__standby_manual_a__bad_O2	pos	standby_manual_a	corpus_auto/standby_manual_a/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__standby_manual_a__bad_O2_2	pos	standby_manual_a	corpus_auto/standby_manual_a/bad_O2_2.st	O2	normal	VIOLATED	0	cross-variable
+pos__standby_manual_a__bad_O8	pos	standby_manual_a	corpus_auto/standby_manual_a/bad_O8.st	O8	normal	VIOLATED	0	cross-variable
+neg__standby_manual_a	neg	standby_manual_a	corpus_auto/standby_manual_a/good.st	-	normal	CONTAINED	0	
+ctrl0__standby_manual_a	ctrl0	standby_manual_a	corpus_auto/standby_manual_a/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__stardelta__bad_O1	pos	stardelta	corpus_auto/stardelta/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__stardelta__bad_O2	pos	stardelta	corpus_auto/stardelta/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__stardelta__bad_O3	pos	stardelta	corpus_auto/stardelta/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__stardelta__bad_O6	pos	stardelta	corpus_auto/stardelta/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__stardelta	neg	stardelta	corpus_auto/stardelta/good.st	-	normal	CONTAINED	0	
+ctrl0__stardelta	ctrl0	stardelta	corpus_auto/stardelta/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__stardelta_ready_bypass__bad_O1	pos	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__stardelta_ready_bypass__bad_O1_2	pos	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/bad_O1_2.st	O1	normal	VIOLATED	0	cross-variable
+pos__stardelta_ready_bypass__bad_O2	pos	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__stardelta_ready_bypass__bad_O3	pos	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__stardelta_ready_bypass__bad_O6	pos	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__stardelta_ready_bypass	neg	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/good.st	-	normal	CONTAINED	0	
+ctrl0__stardelta_ready_bypass	ctrl0	stardelta_ready_bypass	corpus_auto/stardelta_ready_bypass/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__stardelta_stage_rewrite__bad_O2	pos	stardelta_stage_rewrite	corpus_auto/stardelta_stage_rewrite/bad_O2.st	O2	refactor	VIOLATED	0	zero-diff
+pos__stardelta_stage_rewrite__bad_O3	pos	stardelta_stage_rewrite	corpus_auto/stardelta_stage_rewrite/bad_O3.st	O3	refactor	VIOLATED	0	zero-diff
+pos__stardelta_stage_rewrite__bad_O7	pos	stardelta_stage_rewrite	corpus_auto/stardelta_stage_rewrite/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+neg__stardelta_stage_rewrite	neg	stardelta_stage_rewrite	corpus_auto/stardelta_stage_rewrite/good.st	-	refactor	CONTAINED	0	
+ctrl0__stardelta_stage_rewrite	ctrl0	stardelta_stage_rewrite	corpus_auto/stardelta_stage_rewrite/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__stardelta_star_manual__bad_O1	pos	stardelta_star_manual	corpus_auto/stardelta_star_manual/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__stardelta_star_manual__bad_O2	pos	stardelta_star_manual	corpus_auto/stardelta_star_manual/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__stardelta_star_manual__bad_O3	pos	stardelta_star_manual	corpus_auto/stardelta_star_manual/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__stardelta_star_manual__bad_O6	pos	stardelta_star_manual	corpus_auto/stardelta_star_manual/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__stardelta_star_manual	neg	stardelta_star_manual	corpus_auto/stardelta_star_manual/good.st	-	normal	CONTAINED	0	
+ctrl0__stardelta_star_manual	ctrl0	stardelta_star_manual	corpus_auto/stardelta_star_manual/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__stardelta_switch_6s__bad_O1	pos	stardelta_switch_6s	corpus_auto/stardelta_switch_6s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__stardelta_switch_6s__bad_O2	pos	stardelta_switch_6s	corpus_auto/stardelta_switch_6s/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__stardelta_switch_6s__bad_O3	pos	stardelta_switch_6s	corpus_auto/stardelta_switch_6s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__stardelta_switch_6s__bad_O6	pos	stardelta_switch_6s	corpus_auto/stardelta_switch_6s/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__stardelta_switch_6s	neg	stardelta_switch_6s	corpus_auto/stardelta_switch_6s/good.st	-	normal	CONTAINED	0	
+ctrl0__stardelta_switch_6s	ctrl0	stardelta_switch_6s	corpus_auto/stardelta_switch_6s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__stardelta_switch_8s__bad_O1	pos	stardelta_switch_8s	corpus_auto/stardelta_switch_8s/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__stardelta_switch_8s__bad_O2	pos	stardelta_switch_8s	corpus_auto/stardelta_switch_8s/bad_O2.st	O2	normal	VIOLATED	0	cross-variable
+pos__stardelta_switch_8s__bad_O3	pos	stardelta_switch_8s	corpus_auto/stardelta_switch_8s/bad_O3.st	O3	normal	VIOLATED	0	cross-variable
+pos__stardelta_switch_8s__bad_O6	pos	stardelta_switch_8s	corpus_auto/stardelta_switch_8s/bad_O6.st	O6	normal	VIOLATED	0	cross-variable
+neg__stardelta_switch_8s	neg	stardelta_switch_8s	corpus_auto/stardelta_switch_8s/good.st	-	normal	CONTAINED	0	
+ctrl0__stardelta_switch_8s	ctrl0	stardelta_switch_8s	corpus_auto/stardelta_switch_8s/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tank__bad_O4	pos	tank	corpus_auto/tank/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__tank	neg	tank	corpus_auto/tank/good.st	-	normal	CONTAINED	0	
+ctrl0__tank	ctrl0	tank	corpus_auto/tank/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tank_flat__bad_O4	pos	tank_flat	corpus_auto/tank_flat/bad_O4.st	O4	refactor	VIOLATED	0	zero-diff
+pos__tank_flat__bad_O4_2	pos	tank_flat	corpus_auto/tank_flat/bad_O4_2.st	O4	refactor	VIOLATED	0	zero-diff
+pos__tank_flat__bad_O7	pos	tank_flat	corpus_auto/tank_flat/bad_O7.st	O7	refactor	VIOLATED	0	zero-diff
+pos__tank_flat__bad_O7_2	pos	tank_flat	corpus_auto/tank_flat/bad_O7_2.st	O7	refactor	VIOLATED	0	zero-diff
+neg__tank_flat	neg	tank_flat	corpus_auto/tank_flat/good.st	-	refactor	CONTAINED	0	
+ctrl0__tank_flat	ctrl0	tank_flat	corpus_auto/tank_flat/orig.st	-	refactor	NOT_VIOLATED	0	empty change
+pos__tank_hi_85__bad_O4	pos	tank_hi_85	corpus_auto/tank_hi_85/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__tank_hi_85	neg	tank_hi_85	corpus_auto/tank_hi_85/good.st	-	normal	CONTAINED	0	
+ctrl0__tank_hi_85	ctrl0	tank_hi_85	corpus_auto/tank_hi_85/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tank_low_stop__bad_O4	pos	tank_low_stop	corpus_auto/tank_low_stop/bad_O4.st	O4	normal	VIOLATED	0	same-variable-guard
+neg__tank_low_stop	neg	tank_low_stop	corpus_auto/tank_low_stop/good.st	-	normal	CONTAINED	0	
+ctrl0__tank_low_stop	ctrl0	tank_low_stop	corpus_auto/tank_low_stop/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tonof_delay__bad_O3	pos	tonof_delay	corpus_auto/tonof_delay/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__tonof_delay	neg	tonof_delay	corpus_auto/tonof_delay/good.st	-	normal	CONTAINED	0	
+ctrl0__tonof_delay	ctrl0	tonof_delay	corpus_auto/tonof_delay/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tonof_on_1000ms__bad_O3	pos	tonof_on_1000ms	corpus_auto/tonof_on_1000ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__tonof_on_1000ms	neg	tonof_on_1000ms	corpus_auto/tonof_on_1000ms/good.st	-	normal	CONTAINED	0	
+ctrl0__tonof_on_1000ms	ctrl0	tonof_on_1000ms	corpus_auto/tonof_on_1000ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tonof_on_1200ms__bad_O3	pos	tonof_on_1200ms	corpus_auto/tonof_on_1200ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__tonof_on_1200ms	neg	tonof_on_1200ms	corpus_auto/tonof_on_1200ms/good.st	-	normal	CONTAINED	0	
+ctrl0__tonof_on_1200ms	ctrl0	tonof_on_1200ms	corpus_auto/tonof_on_1200ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__tonof_on_1500ms__bad_O3	pos	tonof_on_1500ms	corpus_auto/tonof_on_1500ms/bad_O3.st	O3	normal	VIOLATED	0	same-variable-window
+neg__tonof_on_1500ms	neg	tonof_on_1500ms	corpus_auto/tonof_on_1500ms/good.st	-	normal	CONTAINED	0	
+ctrl0__tonof_on_1500ms	ctrl0	tonof_on_1500ms	corpus_auto/tonof_on_1500ms/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__vfd_low__bad_O4	pos	vfd_low	corpus_auto/vfd_low/bad_O4.st	O4	normal	VIOLATED	1	same-variable-guard
+neg__vfd_low	neg	vfd_low	corpus_auto/vfd_low/good.st	-	normal	CONTAINED	1	
+ctrl0__vfd_low	ctrl0	vfd_low	corpus_auto/vfd_low/orig.st	-	normal	NOT_VIOLATED	1	empty change
+pos__weigh_high__bad_O1	pos	weigh_high	corpus_auto/weigh_high/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__weigh_high__bad_O4	pos	weigh_high	corpus_auto/weigh_high/bad_O4.st	O4	normal	VIOLATED	0	cross-variable
+neg__weigh_high	neg	weigh_high	corpus_auto/weigh_high/good.st	-	normal	CONTAINED	0	
+ctrl0__weigh_high	ctrl0	weigh_high	corpus_auto/weigh_high/orig.st	-	normal	NOT_VIOLATED	0	empty change
+pos__weigh_low__bad_O1	pos	weigh_low	corpus_auto/weigh_low/bad_O1.st	O1	normal	VIOLATED	0	cross-variable
+pos__weigh_low__bad_O4	pos	weigh_low	corpus_auto/weigh_low/bad_O4.st	O4	normal	VIOLATED	0	cross-variable
+neg__weigh_low	neg	weigh_low	corpus_auto/weigh_low/good.st	-	normal	CONTAINED	0	
+ctrl0__weigh_low	ctrl0	weigh_low	corpus_auto/weigh_low/orig.st	-	normal	NOT_VIOLATED	0	empty change
+ctrl1__conc_stage1	ctrl1	conc_stage1	eval/ctrl1/conc_stage1.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__conc_stage2	ctrl1	conc_stage2	eval/ctrl1/conc_stage2.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__conveyor	ctrl1	conveyor	eval/ctrl1/conveyor.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__conveyor_debounce_300ms	ctrl1	conveyor_debounce_300ms	eval/ctrl1/conveyor_debounce_300ms.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__conveyor_debounce_400ms	ctrl1	conveyor_debounce_400ms	eval/ctrl1/conveyor_debounce_400ms.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__conveyor_fault_rewrite	ctrl1	conveyor_fault_rewrite	eval/ctrl1/conveyor_fault_rewrite.st	-	refactor	NOT_VIOLATED	0	both
+ctrl1__conveyor_perm_elim	ctrl1	conveyor_perm_elim	eval/ctrl1/conveyor_perm_elim.st	-	refactor	NOT_VIOLATED	0	comment
+ctrl1__edge	ctrl1	edge	eval/ctrl1/edge.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__edge_arm_40ms	ctrl1	edge_arm_40ms	eval/ctrl1/edge_arm_40ms.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__edge_arm_60ms	ctrl1	edge_arm_60ms	eval/ctrl1/edge_arm_60ms.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__enable_heat_manual	ctrl1	enable_heat_manual	eval/ctrl1/enable_heat_manual.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__enable_lamp_auto	ctrl1	enable_lamp_auto	eval/ctrl1/enable_lamp_auto.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__enable_lamp_manual	ctrl1	enable_lamp_manual	eval/ctrl1/enable_lamp_manual.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__fan_purge_4s	ctrl1	fan_purge_4s	eval/ctrl1/fan_purge_4s.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__fan_purge_5s	ctrl1	fan_purge_5s	eval/ctrl1/fan_purge_5s.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__flow_low	ctrl1	flow_low	eval/ctrl1/flow_low.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__gate	ctrl1	gate	eval/ctrl1/gate.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__gate_hold_1200ms	ctrl1	gate_hold_1200ms	eval/ctrl1/gate_hold_1200ms.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__gate_hold_1500ms	ctrl1	gate_hold_1500ms	eval/ctrl1/gate_hold_1500ms.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__gate_hold_1s	ctrl1	gate_hold_1s	eval/ctrl1/gate_hold_1s.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__guard_clean_brush_water	ctrl1	guard_clean_brush_water	eval/ctrl1/guard_clean_brush_water.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__guard_comp_unload_oil	ctrl1	guard_comp_unload_oil	eval/ctrl1/guard_comp_unload_oil.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__guard_convey_last_manual	ctrl1	guard_convey_last_manual	eval/ctrl1/guard_convey_last_manual.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__guard_fan_temp_low	ctrl1	guard_fan_temp_low	eval/ctrl1/guard_fan_temp_low.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__guard_feeder_level_low	ctrl1	guard_feeder_level_low	eval/ctrl1/guard_feeder_level_low.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__guard_mixer_dis_cover	ctrl1	guard_mixer_dis_cover	eval/ctrl1/guard_mixer_dis_cover.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__guard_pack_index_film	ctrl1	guard_pack_index_film	eval/ctrl1/guard_pack_index_film.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__guard_press_retract_door	ctrl1	guard_press_retract_door	eval/ctrl1/guard_press_retract_door.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__guard_pump_c_fault	ctrl1	guard_pump_c_fault	eval/ctrl1/guard_pump_c_fault.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__guard_robot_home_servo	ctrl1	guard_robot_home_servo	eval/ctrl1/guard_robot_home_servo.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__guard_stack_clamp_zone	ctrl1	guard_stack_clamp_zone	eval/ctrl1/guard_stack_clamp_zone.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__guard_valve_a_manual	ctrl1	guard_valve_a_manual	eval/ctrl1/guard_valve_a_manual.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__heat_off	ctrl1	heat_off	eval/ctrl1/heat_off.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__heat_on	ctrl1	heat_on	eval/ctrl1/heat_on.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__heat_overtemp_manual	ctrl1	heat_overtemp_manual	eval/ctrl1/heat_overtemp_manual.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__hyst_band	ctrl1	hyst_band	eval/ctrl1/hyst_band.st	-	normal	NOT_VIOLATED	1	both
+ctrl1__hyst_connect	ctrl1	hyst_connect	eval/ctrl1/hyst_connect.st	-	normal	NOT_VIOLATED	1	comment
+ctrl1__hyst_nest	ctrl1	hyst_nest	eval/ctrl1/hyst_nest.st	-	refactor	NOT_VIOLATED	0	rename
+ctrl1__indexer_edge_refactor	ctrl1	indexer_edge_refactor	eval/ctrl1/indexer_edge_refactor.st	-	refactor	NOT_VIOLATED	0	both
+ctrl1__indexer_ready_1800ms	ctrl1	indexer_ready_1800ms	eval/ctrl1/indexer_ready_1800ms.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__indexer_ready_2s	ctrl1	indexer_ready_2s	eval/ctrl1/indexer_ready_2s.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__interlock_clamp_manual	ctrl1	interlock_clamp_manual	eval/ctrl1/interlock_clamp_manual.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__interlock_clamp_overload	ctrl1	interlock_clamp_overload	eval/ctrl1/interlock_clamp_overload.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__interlock_clamp_overload_v2	ctrl1	interlock_clamp_overload_v2	eval/ctrl1/interlock_clamp_overload_v2.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__interlock_eject_ready	ctrl1	interlock_eject_ready	eval/ctrl1/interlock_eject_ready.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__level3_high	ctrl1	level3_high	eval/ctrl1/level3_high.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__level3_low	ctrl1	level3_low	eval/ctrl1/level3_low.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__maint_alarm_mute	ctrl1	maint_alarm_mute	eval/ctrl1/maint_alarm_mute.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__maint_lamp_manual	ctrl1	maint_lamp_manual	eval/ctrl1/maint_lamp_manual.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__press_high	ctrl1	press_high	eval/ctrl1/press_high.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__pulse_stretch	ctrl1	pulse_stretch	eval/ctrl1/pulse_stretch.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__pulse_stretch_400ms	ctrl1	pulse_stretch_400ms	eval/ctrl1/pulse_stretch_400ms.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__pulse_stretch_600ms	ctrl1	pulse_stretch_600ms	eval/ctrl1/pulse_stretch_600ms.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__pulse_stretch_800ms	ctrl1	pulse_stretch_800ms	eval/ctrl1/pulse_stretch_800ms.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__pump	ctrl1	pump	eval/ctrl1/pump.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__pump_manual_interlock	ctrl1	pump_manual_interlock	eval/ctrl1/pump_manual_interlock.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__pump_softstart_3s	ctrl1	pump_softstart_3s	eval/ctrl1/pump_softstart_3s.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__pump_softstart_4s	ctrl1	pump_softstart_4s	eval/ctrl1/pump_softstart_4s.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__pump_valve_rewrite	ctrl1	pump_valve_rewrite	eval/ctrl1/pump_valve_rewrite.st	-	refactor	NOT_VIOLATED	0	rename
+ctrl1__refactor	ctrl1	refactor	eval/ctrl1/refactor.st	-	refactor	NOT_VIOLATED	0	both
+ctrl1__silo_low	ctrl1	silo_low	eval/ctrl1/silo_low.st	-	normal	NOT_VIOLATED	1	comment
+ctrl1__soc_high	ctrl1	soc_high	eval/ctrl1/soc_high.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__soc_low	ctrl1	soc_low	eval/ctrl1/soc_low.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__soc_under	ctrl1	soc_under	eval/ctrl1/soc_under.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__standby_alarm_mute	ctrl1	standby_alarm_mute	eval/ctrl1/standby_alarm_mute.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__standby_manual_a	ctrl1	standby_manual_a	eval/ctrl1/standby_manual_a.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__stardelta	ctrl1	stardelta	eval/ctrl1/stardelta.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__stardelta_ready_bypass	ctrl1	stardelta_ready_bypass	eval/ctrl1/stardelta_ready_bypass.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__stardelta_stage_rewrite	ctrl1	stardelta_stage_rewrite	eval/ctrl1/stardelta_stage_rewrite.st	-	refactor	NOT_VIOLATED	0	both
+ctrl1__stardelta_star_manual	ctrl1	stardelta_star_manual	eval/ctrl1/stardelta_star_manual.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__stardelta_switch_8s	ctrl1	stardelta_switch_8s	eval/ctrl1/stardelta_switch_8s.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__tank	ctrl1	tank	eval/ctrl1/tank.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__tank_flat	ctrl1	tank_flat	eval/ctrl1/tank_flat.st	-	refactor	NOT_VIOLATED	0	comment
+ctrl1__tank_hi_85	ctrl1	tank_hi_85	eval/ctrl1/tank_hi_85.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__tank_low_stop	ctrl1	tank_low_stop	eval/ctrl1/tank_low_stop.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__tonof_on_1000ms	ctrl1	tonof_on_1000ms	eval/ctrl1/tonof_on_1000ms.st	-	normal	NOT_VIOLATED	0	comment
+ctrl1__tonof_on_1200ms	ctrl1	tonof_on_1200ms	eval/ctrl1/tonof_on_1200ms.st	-	normal	NOT_VIOLATED	0	rename
+ctrl1__tonof_on_1500ms	ctrl1	tonof_on_1500ms	eval/ctrl1/tonof_on_1500ms.st	-	normal	NOT_VIOLATED	0	both
+ctrl1__vfd_low	ctrl1	vfd_low	eval/ctrl1/vfd_low.st	-	normal	NOT_VIOLATED	1	comment
+ctrl1__weigh_high	ctrl1	weigh_high	eval/ctrl1/weigh_high.st	-	normal	NOT_VIOLATED	0	rename

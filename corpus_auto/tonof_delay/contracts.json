@@ -1,0 +1,107 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xIn",
+          "dir": "rising"
+        },
+        "allow": [
+          "yQ"
+        ],
+        "window": [
+          0,
+          30
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 30,
+          "tol": 0
+        },
+        "allow": [
+          "yQ"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yQ"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 30,
+          "tol": 0
+        },
+        "allow": [
+          "yQ"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xIn",
+          "dir": "rising"
+        },
+        "allow": [
+          "yQ"
+        ],
+        "window": [
+          0,
+          110
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 30,
+          "tol": 0
+        },
+        "allow": [
+          "yQ"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xIn",
+          "dir": "rising"
+        },
+        "allow": [
+          "yQ"
+        ],
+        "window": [
+          0,
+          110
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 30,
+          "tol": 0
+        },
+        "allow": [
+          "yQ"
+        ]
+      }
+    ]
+  }
+}

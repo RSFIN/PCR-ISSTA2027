@@ -1,0 +1,36 @@
+{
+  "change_order": "xPart 上升沿触发的闸门保持时间由 500 毫秒改为 1500 毫秒；其余逻辑不变。",
+  "over_edit_kind": "same-variable-window",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xPart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yGate"
+        ],
+        "window": [
+          0,
+          150
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 100,
+          "tol": 0
+        },
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 900,
+  "trace_style": "spaced",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（闸门保持）"
+}

@@ -1,0 +1,32 @@
+{
+  "change_order": "xOverload 置位时，过载联锁不再阻止夹紧输出，自动支路允许在过载工况下夹紧；xOverload 置位这一前提不变，窗口外维持原闭锁；手动支路的原逻辑不变；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yAlarm"
+        ],
+        "guard": "xOverload"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yEject",
+          "yAlarm"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（三工位互锁矩阵），自建；v2 = 同一程序与 good.st，仅工单文本消歧（T3 措辞消歧对照实验）"
+}

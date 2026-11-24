@@ -1,0 +1,17 @@
+{
+  "change_order": "把星形与三角输出的条件判断改写为等价的分支写法，行为必须逐周期不变；其余逻辑不变。",
+  "over_edit_kind": "zero-diff",
+  "contract": {
+    "clauses": [],
+    "require": [
+      {
+        "structural": true
+      }
+    ]
+  },
+  "n_cycles": 900,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（星三角启动），复用 `corpus/stardelta`",
+  "change_kind": "refactor"
+}

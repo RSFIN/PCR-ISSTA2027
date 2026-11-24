@@ -1,0 +1,54 @@
+{
+  "change_order": "xFilm 断开时，该联锁不再约束手动支路，手动模式下允许分度盘动作；xFilm 断开这一前提不变，窗口外维持原闭锁；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ],
+        "guard": "NOT xFilm"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xAuto",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xPermit",
+        "allow": [
+          "yIndex"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（包装机分度/封口/切刀），自建"
+}

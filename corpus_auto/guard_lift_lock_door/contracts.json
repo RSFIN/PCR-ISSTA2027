@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xAuto",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xPermit",
+        "allow": [
+          "yLock"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xAuto",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xPermit",
+        "allow": [
+          "yLock"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xAuto",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xPermit",
+        "allow": [
+          "yLock"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ],
+        "guard": "NOT xDoor"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yUp",
+          "yDown",
+          "yLock",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xAuto",
+        "allow": [
+          "yLock"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xDoor AND xManual AND NOT xPermit",
+        "allow": [
+          "yLock"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "change_order": "xFan 断开沿后，排风挡板保持延时由 3 秒改为 5 秒；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xFan",
+          "dir": "falling"
+        },
+        "allow": [
+          "yDamper"
+        ],
+        "window": [
+          0,
+          500
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 0
+        },
+        "allow": [
+          "yDamper"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 900,
+  "trace_style": "spaced",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（风机停机后挡板排风）"
+}

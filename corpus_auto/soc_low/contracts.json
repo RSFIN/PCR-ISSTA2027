@@ -1,0 +1,95 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 20 AND rSoc <= 30"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 20 AND rSoc <= 30"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 20 AND rSoc <= 30"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 20 AND rSoc <= 30"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 20 AND rSoc <= 30"
+      }
+    ]
+  }
+}

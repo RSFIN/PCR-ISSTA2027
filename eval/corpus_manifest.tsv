@@ -1,0 +1,109 @@
+# Corpus manifest: 96 main programs + 5 verbatim OSCAT probes.
+# spec <TAB> set <TAB> expect <TAB> note
+#   set    main  = the 96 programs of the main experiment
+#          probe = verbatim upstream ports (external-validity probe, Sec. 6.2)
+#   expect ACCEPT = check_corpus.py must report 0 rejections
+#          REJECT = must report exactly 1 rejection, for the reason in note
+# reproduce.py --full compares every row; a deviation means the artifact is
+# broken, not that a result changed.
+conc_stage1	main	ACCEPT	
+conc_stage2	main	ACCEPT	
+conveyor	main	ACCEPT	
+conveyor_debounce_300ms	main	ACCEPT	
+conveyor_debounce_400ms	main	ACCEPT	
+conveyor_debounce_500ms	main	ACCEPT	
+conveyor_fault_rewrite	main	ACCEPT	
+conveyor_perm_elim	main	ACCEPT	
+edge	main	ACCEPT	
+edge_arm_40ms	main	ACCEPT	
+edge_arm_60ms	main	ACCEPT	
+edge_arm_elim	main	ACCEPT	
+enable_heat_manual	main	ACCEPT	
+enable_lamp_auto	main	ACCEPT	
+enable_lamp_manual	main	ACCEPT	
+fan_purge_4s	main	ACCEPT	
+fan_purge_5s	main	ACCEPT	
+fan_purge_6s	main	ACCEPT	
+flow_low	main	ACCEPT	
+gate	main	ACCEPT	
+gate_hold_1200ms	main	ACCEPT	
+gate_hold_1500ms	main	ACCEPT	
+gate_hold_1s	main	ACCEPT	
+guard_chiller_bypass_flow	main	ACCEPT	
+guard_clean_brush_water	main	ACCEPT	
+guard_comp_unload_oil	main	ACCEPT	
+guard_convey_last_manual	main	ACCEPT	
+guard_fan_temp_low	main	ACCEPT	
+guard_feeder_level_low	main	ACCEPT	
+guard_lift_lock_door	main	ACCEPT	
+guard_mixer_dis_cover	main	ACCEPT	
+guard_pack_index_film	main	ACCEPT	
+guard_press_retract_door	main	ACCEPT	
+guard_pump_c_fault	main	ACCEPT	
+guard_robot_home_servo	main	ACCEPT	
+guard_sorter_gate_jam	main	ACCEPT	
+guard_stack_clamp_zone	main	ACCEPT	
+guard_valve_a_manual	main	ACCEPT	
+heat_off	main	ACCEPT	
+heat_on	main	ACCEPT	
+heat_overtemp_manual	main	ACCEPT	
+heat_zone1_manual	main	ACCEPT	
+hyst_band	main	ACCEPT	
+hyst_connect	main	ACCEPT	
+hyst_nest	main	ACCEPT	
+indexer_edge_refactor	main	ACCEPT	
+indexer_ready_1800ms	main	ACCEPT	
+indexer_ready_2500ms	main	ACCEPT	
+indexer_ready_2s	main	ACCEPT	
+interlock_clamp_manual	main	ACCEPT	
+interlock_clamp_overload	main	ACCEPT	
+interlock_clamp_overload_v2	main	ACCEPT	
+interlock_eject_ready	main	ACCEPT	
+interlock_press_manual	main	ACCEPT	
+level3_high	main	ACCEPT	
+level3_low	main	ACCEPT	
+maint_alarm_mute	main	ACCEPT	
+maint_lamp_manual	main	ACCEPT	
+press_high	main	ACCEPT	
+press_low	main	ACCEPT	
+pulse_stretch	main	ACCEPT	
+pulse_stretch_400ms	main	ACCEPT	
+pulse_stretch_600ms	main	ACCEPT	
+pulse_stretch_800ms	main	ACCEPT	
+pump	main	ACCEPT	
+pump_fault_jog	main	ACCEPT	
+pump_manual_interlock	main	ACCEPT	
+pump_softstart_3s	main	ACCEPT	
+pump_softstart_4s	main	ACCEPT	
+pump_valve_rewrite	main	ACCEPT	
+refactor	main	ACCEPT	
+seq	main	ACCEPT	
+silo_low	main	ACCEPT	
+soc_high	main	ACCEPT	
+soc_low	main	ACCEPT	
+soc_under	main	ACCEPT	
+standby_alarm_mute	main	ACCEPT	
+standby_fault_a	main	ACCEPT	
+standby_manual_a	main	ACCEPT	
+stardelta	main	ACCEPT	
+stardelta_ready_bypass	main	ACCEPT	
+stardelta_stage_rewrite	main	ACCEPT	
+stardelta_star_manual	main	ACCEPT	
+stardelta_switch_6s	main	ACCEPT	
+stardelta_switch_8s	main	ACCEPT	
+tank	main	ACCEPT	
+tank_flat	main	ACCEPT	
+tank_hi_85	main	ACCEPT	
+tank_low_stop	main	ACCEPT	
+tonof_delay	main	ACCEPT	
+tonof_on_1000ms	main	ACCEPT	
+tonof_on_1200ms	main	ACCEPT	
+tonof_on_1500ms	main	ACCEPT	
+vfd_low	main	ACCEPT	
+weigh_high	main	ACCEPT	
+weigh_low	main	ACCEPT	
+ext_btrig	probe	ACCEPT	OSCAT B_TRIG, verbatim
+ext_driver	probe	ACCEPT	OSCAT DRIVER_1, verbatim
+ext_interlock	probe	ACCEPT	OSCAT INTERLOCK, verbatim (after TOF falling-edge fix)
+ext_sel2of3b	probe	ACCEPT	OSCAT SEL2_OF_3B, verbatim
+ext_toggle	probe	REJECT	TOGGLE + newly added interlock: outside the expressible fragment (Sec. 4.4), rejected on purpose

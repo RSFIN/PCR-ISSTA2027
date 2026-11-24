@@ -1,0 +1,36 @@
+{
+  "change_order": "yValve 上升沿后，泵软启动延时由 0 秒改为 3 秒；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "yValve",
+          "dir": "rising"
+        },
+        "allow": [
+          "yPump"
+        ],
+        "window": [
+          0,
+          1200
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 300,
+          "tol": 0
+        },
+        "allow": [
+          "yPump"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 600,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（泵站）"
+}

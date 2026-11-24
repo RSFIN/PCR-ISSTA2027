@@ -1,0 +1,32 @@
+{
+  "change_order": "启动信号有效时不再等待就绪信号，过载保护保持不变；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta"
+        ],
+        "guard": "xStart"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 900,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（星三角启动），复用 `corpus/stardelta`"
+}

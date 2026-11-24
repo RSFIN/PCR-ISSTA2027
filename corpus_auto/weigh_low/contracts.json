@@ -1,0 +1,87 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ]
+  }
+}

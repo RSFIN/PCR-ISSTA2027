@@ -1,0 +1,54 @@
+{
+  "change_order": "xWater 断开时，该联锁不再约束手动支路，手动模式下允许刷盘转动；xWater 断开这一前提不变，窗口外维持原闭锁；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ],
+        "guard": "NOT xWater"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xAuto",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xPermit",
+        "allow": [
+          "yBrush"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（清洗机泵/刷/烘干），自建"
+}

@@ -1,0 +1,30 @@
+{
+  "change_order": "手动模式下允许星形输出，不再受手动闭锁限制；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yStar"
+        ],
+        "guard": "xManual"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 900,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（星三角启动），复用 `corpus/stardelta`"
+}

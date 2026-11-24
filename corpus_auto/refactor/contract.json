@@ -1,0 +1,17 @@
+{
+  "change_order": "把 R_TRIG 边沿检测改为显式上升沿判断，行为必须逐周期不变。",
+  "over_edit_kind": "zero-diff",
+  "contract": {
+    "clauses": [],
+    "require": [
+      {
+        "structural": true
+      }
+    ]
+  },
+  "n_cycles": 900,
+  "trace_style": "spaced",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（边沿检测重构）",
+  "change_kind": "refactor"
+}

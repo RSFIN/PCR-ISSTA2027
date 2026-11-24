@@ -1,0 +1,33 @@
+{
+  "change_order": "变频器频率下限阈值由 20 改为 30；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yMotor"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yMotor"
+        ],
+        "guard": "rFreq >= 20 AND rFreq <= 30"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（变频频率上下限），含越限保持语义",
+  "undetermined": "E_MEMORY_BOUNDARY",
+  "undetermined_detail": "记忆型输出 ['yMotor'] 承载边界差异：值被保持，差异依赖历史而非当前输入，静态区间守卫不可能健全（A5 构造性验证）",
+  "expected_miss": true,
+  "miss_reason": "上界退化为变量级（G0）：窗口与工况守卫两维全部丢失（典型诱因：带记忆的赋值——输出在部分分支不被赋值，差异会延续到静态守卫之外）"
+}

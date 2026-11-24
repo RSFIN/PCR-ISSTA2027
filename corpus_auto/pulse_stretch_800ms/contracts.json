@@ -1,0 +1,123 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xTrig",
+          "dir": "rising"
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ],
+        "window": [
+          0,
+          50
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xTrig",
+          "dir": "rising"
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ],
+        "window": [
+          0,
+          80
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xTrig",
+          "dir": "rising"
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ],
+        "window": [
+          0,
+          80
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ]
+      }
+    ]
+  }
+}

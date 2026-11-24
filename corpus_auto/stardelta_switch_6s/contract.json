@@ -1,0 +1,38 @@
+{
+  "change_order": "yMain 上升沿后，星形切换为三角形的延时由 5 秒改为 6 秒；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "yMain",
+          "dir": "rising"
+        },
+        "allow": [
+          "yStar",
+          "yDelta"
+        ],
+        "window": [
+          0,
+          900
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 100,
+          "tol": 0
+        },
+        "allow": [
+          "yStar",
+          "yDelta"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 1000,
+  "trace_style": "spaced",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（星三角启动）"
+}

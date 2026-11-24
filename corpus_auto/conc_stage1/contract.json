@@ -1,0 +1,32 @@
+{
+  "change_order": "可燃气体一级报警阈值由 40 改为 30；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 30 AND rConc <= 40"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yAlarm1",
+          "yAlarm2",
+          "yPurge"
+        ],
+        "guard": "rConc >= 30 AND rConc <= 40"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（浓度两级报警），形态对应两级气体报警器"
+}

@@ -1,0 +1,108 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xA",
+          "dir": "rising"
+        },
+        "allow": [
+          "yCmd"
+        ],
+        "window": [
+          0,
+          3
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 3,
+          "tol": 0
+        },
+        "allow": [
+          "yCmd"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yCmd"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 3,
+          "tol": 0
+        },
+        "allow": [
+          "yCmd"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xA",
+          "dir": "rising"
+        },
+        "allow": [
+          "yCmd"
+        ],
+        "window": [
+          0,
+          6
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 3,
+          "tol": 0
+        },
+        "allow": [
+          "yCmd"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xA",
+          "dir": "rising"
+        },
+        "allow": [
+          "yCmd"
+        ],
+        "window": [
+          0,
+          6
+        ],
+        "guard": "xB"
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 3,
+          "tol": 0
+        },
+        "allow": [
+          "yCmd"
+        ]
+      }
+    ]
+  }
+}

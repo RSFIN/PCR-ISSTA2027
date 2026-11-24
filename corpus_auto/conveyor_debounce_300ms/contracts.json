@@ -1,0 +1,107 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xStart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yReady"
+        ],
+        "window": [
+          0,
+          10
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 10,
+          "tol": 0
+        },
+        "allow": [
+          "yReady"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yReady"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 10,
+          "tol": 0
+        },
+        "allow": [
+          "yReady"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xStart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yReady"
+        ],
+        "window": [
+          0,
+          30
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 10,
+          "tol": 0
+        },
+        "allow": [
+          "yReady"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xStart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yReady"
+        ],
+        "window": [
+          0,
+          30
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 10,
+          "tol": 0
+        },
+        "allow": [
+          "yReady"
+        ]
+      }
+    ]
+  }
+}

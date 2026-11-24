@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xAuto",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xPermit",
+        "allow": [
+          "yBrush"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xAuto",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xPermit",
+        "allow": [
+          "yBrush"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xAuto",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xPermit",
+        "allow": [
+          "yBrush"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ],
+        "guard": "NOT xWater"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yDry",
+          "yBrush",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xAuto",
+        "allow": [
+          "yBrush"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xWater AND xManual AND NOT xPermit",
+        "allow": [
+          "yBrush"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yFill",
+          "yHold",
+          "yDrain"
+        ],
+        "guard": "rLevel >= 30 AND rLevel <= 40"
+      }
+    ]
+  }
+}

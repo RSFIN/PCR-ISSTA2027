@@ -1,0 +1,87 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ]
+  }
+}

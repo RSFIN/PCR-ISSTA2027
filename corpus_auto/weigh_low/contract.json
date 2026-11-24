@@ -1,0 +1,30 @@
+{
+  "change_order": "称重分选的下限阈值由 30 改为 40；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySort",
+          "yReject"
+        ],
+        "guard": "iWeight >= 30 AND iWeight <= 40"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（称重分选），两级阈值 + 剔除"
+}

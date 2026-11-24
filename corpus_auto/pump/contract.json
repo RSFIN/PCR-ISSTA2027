@@ -1,0 +1,38 @@
+{
+  "change_order": "泵启动增加 2 秒软启动延时；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "yValve",
+          "dir": "rising"
+        },
+        "allow": [
+          "yPump"
+        ],
+        "window": [
+          0,
+          800
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 0
+        },
+        "allow": [
+          "yPump"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（泵站）",
+  "undetermined": "E_NO_TRIGGER",
+  "undetermined_detail": "触发变量 ['yValve'] 既不在输入集合内，也没在变更单里点名（锚点是编译器猜的，换说法会漂）"
+}

@@ -1,0 +1,86 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ],
+        "guard": "rIn >= 70 AND rIn <= 80"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ],
+        "guard": "rIn >= 70 AND rIn <= 80"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ],
+        "guard": "rIn >= 70 AND rIn <= 80"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yQ",
+          "yWin"
+        ],
+        "guard": "rIn >= 70 AND rIn <= 80"
+      }
+    ]
+  }
+}

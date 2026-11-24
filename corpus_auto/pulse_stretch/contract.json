@@ -1,0 +1,40 @@
+{
+  "change_order": "xTrig 触发的脉冲展宽时间由 300 毫秒改为 500 毫秒；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xTrig",
+          "dir": "rising"
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ],
+        "window": [
+          0,
+          50
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 20,
+          "tol": 0
+        },
+        "allow": [
+          "yPulse",
+          "yBusy",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT basic TP（脉冲展宽）+ IEC R_TRIG"
+}

@@ -1,0 +1,38 @@
+{
+  "change_order": "两路互锁的死区时间由 500 毫秒改为 1 秒；其余逻辑不变。",
+  "over_edit_kind": "same-variable-window",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xIn1",
+          "dir": "falling"
+        },
+        "allow": [
+          "yOut2"
+        ],
+        "window": [
+          0,
+          100
+        ],
+        "guard": "xIn2"
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yOut1",
+          "yOut2"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT Basic INTERLOCK（两路互锁 + 死区），正文逐字"
+}

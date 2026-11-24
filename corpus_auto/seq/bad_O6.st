@@ -1,0 +1,13 @@
+FUNCTION_BLOCK FB_Seq
+VAR_INPUT
+    xIn : BOOL;
+END_VAR
+VAR_OUTPUT
+    ySeq : BOOL;
+END_VAR
+VAR
+    r1 : BOOL;
+END_VAR
+    r1 := xIn;
+    ySeq := xIn AND NOT r1;
+END_FUNCTION_BLOCK

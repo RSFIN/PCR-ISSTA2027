@@ -1,0 +1,83 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLamp"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yFan",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLamp"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yFan",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLamp"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yFan",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLamp"
+        ],
+        "guard": "xAuto"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yFan",
+          "yLamp"
+        ]
+      }
+    ]
+  }
+}

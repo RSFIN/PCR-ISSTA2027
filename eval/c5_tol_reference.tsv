@@ -1,0 +1,97 @@
+name	tol	intent	window	tol_reason
+conc_stage1	0	阈值	-	
+conc_stage2	0	阈值	-	
+conveyor	17	时序	[0, 620]	正确改法新增 tonRestart，其起点比 tonDb 晚 17 拍，实测差异段长 183 而 |b-a|/周期=200；这 17 拍是**两个定时器起点差**造成的模型误差，不是抖动
+conveyor_debounce_300ms	0	时序	[0, 30]	
+conveyor_debounce_400ms	0	时序	[0, 40]	
+conveyor_debounce_500ms	0	时序	[0, 50]	
+conveyor_fault_rewrite	0	重构	-	
+conveyor_perm_elim	0	重构	-	
+edge	0	时序	[0, 5]	
+edge_arm_40ms	0	时序	[0, 4]	
+edge_arm_60ms	0	时序	[0, 6]	
+edge_arm_elim	0	重构	-	
+enable_heat_manual	0	加保护	-	
+enable_lamp_auto	0	加保护	-	
+enable_lamp_manual	0	加保护	-	
+fan_purge_4s	0	时序	[0, 400]	
+fan_purge_5s	0	时序	[0, 500]	
+fan_purge_6s	0	时序	[0, 600]	
+flow_low	0	阈值	-	
+gate	0	时序	[0, 80]	
+gate_hold_1200ms	0	时序	[0, 120]	
+gate_hold_1500ms	0	时序	[0, 150]	
+gate_hold_1s	0	时序	[0, 100]	
+guard_chiller_bypass_flow	0	加保护	-	
+guard_clean_brush_water	0	加保护	-	
+guard_comp_unload_oil	0	加保护	-	
+guard_convey_last_manual	0	加保护	-	
+guard_fan_temp_low	0	加保护	-	
+guard_feeder_level_low	0	加保护	-	
+guard_lift_lock_door	0	加保护	-	
+guard_mixer_dis_cover	0	加保护	-	
+guard_pack_index_film	0	加保护	-	
+guard_press_retract_door	0	加保护	-	
+guard_pump_c_fault	0	加保护	-	
+guard_robot_home_servo	0	加保护	-	
+guard_sorter_gate_jam	0	加保护	-	
+guard_stack_clamp_zone	0	加保护	-	
+guard_valve_a_manual	0	加保护	-	
+heat_off	0	阈值	-	
+heat_on	0	阈值	-	
+heat_overtemp_manual	0	加保护	-	
+heat_zone1_manual	0	加保护	-	
+hyst_band	0	阈值	-	
+hyst_connect	0	阈值	-	
+hyst_nest	0	重构	-	
+indexer_edge_refactor	0	重构	-	
+indexer_ready_1800ms	0	时序	[0, 180]	
+indexer_ready_2500ms	0	时序	[0, 250]	
+indexer_ready_2s	0	时序	[0, 200]	
+interlock_clamp_manual	0	加保护	-	
+interlock_clamp_overload	0	加保护	-	
+interlock_clamp_overload_v2	0	加保护	-	
+interlock_eject_ready	0	加保护	-	
+interlock_press_manual	0	加保护	-	
+level3_high	0	阈值	-	
+level3_low	0	阈值	-	
+maint_alarm_mute	0	加保护	-	
+maint_lamp_manual	0	加保护	-	
+press_high	0	阈值	-	
+press_low	0	阈值	-	
+pulse_stretch	0	时序	[0, 50]	
+pulse_stretch_400ms	0	时序	[0, 40]	
+pulse_stretch_600ms	0	时序	[0, 60]	
+pulse_stretch_800ms	0	时序	[0, 80]	
+pump	0	时序	[0, 800]	
+pump_fault_jog	0	加保护	-	
+pump_manual_interlock	0	加保护	-	
+pump_softstart_3s	0	时序	[0, 1200]	
+pump_softstart_4s	0	时序	[0, 1600]	
+pump_valve_rewrite	0	重构	-	
+refactor	0	重构	-	
+seq	0	重构	-	
+silo_low	0	阈值	-	
+soc_high	0	阈值	-	
+soc_low	0	阈值	-	
+soc_under	0	阈值	-	
+standby_alarm_mute	0	加保护	-	
+standby_fault_a	0	加保护	-	
+standby_manual_a	0	加保护	-	
+stardelta	0	时序	[0, 1300]	
+stardelta_ready_bypass	0	加保护	-	
+stardelta_stage_rewrite	0	重构	-	
+stardelta_star_manual	0	加保护	-	
+stardelta_switch_6s	0	时序	[0, 900]	
+stardelta_switch_8s	0	时序	[0, 1700]	
+tank	0	阈值	-	
+tank_flat	0	重构	-	
+tank_hi_85	0	阈值	-	
+tank_low_stop	0	阈值	-	
+tonof_delay	0	时序	[0, 110]	
+tonof_on_1000ms	0	时序	[0, 130]	
+tonof_on_1200ms	0	时序	[0, 150]	
+tonof_on_1500ms	0	时序	[0, 180]	
+vfd_low	0	阈值	-	
+weigh_high	0	阈值	-	
+weigh_low	0	阈值	-	

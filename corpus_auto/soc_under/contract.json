@@ -1,0 +1,32 @@
+{
+  "change_order": "电池组欠压保护阈值由 20 改为 15；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 15 AND rSoc <= 20"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yCharge",
+          "yDischarge",
+          "yWarn"
+        ],
+        "guard": "rSoc >= 15 AND rSoc <= 20"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（电池组 SOC 保护），复用 `corpus_src/soc_low`"
+}

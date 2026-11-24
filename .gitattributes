@@ -1,0 +1,24 @@
+# Line endings: normalise to LF in the repository, so a clone on any platform
+# holds the same bytes for the data files the checks read.
+* text=auto
+
+*.py    text
+*.md    text
+*.tex   text
+*.bib   text
+*.st    text
+*.json  text
+*.tsv   text
+*.csv   text
+*.svg   text
+*.cff   text
+Makefile text
+
+# Binary: never touch
+*.png   binary
+*.zip   binary
+*.pdf   binary
+
+# Byte-exact third-party source: check_env.py verifies its SHA-256, so git must
+# not convert its line endings on checkout. This must stay last to win.
+vendor/oscat/oscat.st -text

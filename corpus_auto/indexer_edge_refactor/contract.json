@@ -1,0 +1,17 @@
+{
+  "change_order": "将 xPart 的 R_TRIG 边沿检测改为显式上升沿判断，行为必须逐周期不变；其余逻辑不变。",
+  "over_edit_kind": "zero-diff",
+  "contract": {
+    "clauses": [],
+    "require": [
+      {
+        "structural": true
+      }
+    ]
+  },
+  "n_cycles": 500,
+  "trace_style": "spaced",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "自建：分度索引机构，工件到位后翻转索引状态并延时给出就绪输出",
+  "change_kind": "refactor"
+}

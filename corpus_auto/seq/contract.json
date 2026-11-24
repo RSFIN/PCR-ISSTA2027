@@ -1,0 +1,17 @@
+{
+  "change_order": "把上升沿检测改为等价写法（删除未用变量、调整赋值顺序），行为必须逐周期不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [],
+    "require": [
+      {
+        "structural": true
+      }
+    ]
+  },
+  "n_cycles": 20,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（赋值顺序重构）",
+  "change_kind": "refactor"
+}

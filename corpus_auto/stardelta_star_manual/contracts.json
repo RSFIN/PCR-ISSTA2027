@@ -1,0 +1,87 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yStar"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yStar"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yStar"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta",
+          "yFault"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yStar"
+        ],
+        "guard": "xManual"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yStar",
+          "yDelta",
+          "yFault"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "change_order": "液位罐低液位停泵阈值由 10 改为 20；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 10 AND iLevel <= 20"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 10 AND iLevel <= 20"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（液位罐），复用 corpus/tank 的双边界阶梯"
+}

@@ -1,0 +1,32 @@
+{
+  "change_order": "压力高压报警阈值由 75 改为 65；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 65 AND rPress <= 75"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoAlarm",
+          "yHiAlarm",
+          "yPump"
+        ],
+        "guard": "rPress >= 65 AND rPress <= 75"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（压力双限报警），复用 OSCAT LIMIT 的上下限语义"
+}

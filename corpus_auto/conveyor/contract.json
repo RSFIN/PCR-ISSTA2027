@@ -1,0 +1,36 @@
+{
+  "change_order": "急停复位后须延时 2 秒才允许启动；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xEStop",
+          "dir": "falling"
+        },
+        "allow": [
+          "yRun"
+        ],
+        "window": [
+          0,
+          620
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 17
+        },
+        "allow": [
+          "yRun"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（皮带线）"
+}

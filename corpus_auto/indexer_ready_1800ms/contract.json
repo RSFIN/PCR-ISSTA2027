@@ -1,0 +1,36 @@
+{
+  "change_order": "xPart 上升沿后，索引就绪延时由 1 秒改为 1800 毫秒；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xPart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yReady"
+        ],
+        "window": [
+          0,
+          180
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 80,
+          "tol": 0
+        },
+        "allow": [
+          "yReady"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 400,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "自建：分度索引机构，工件到位后翻转索引状态并延时给出就绪输出"
+}

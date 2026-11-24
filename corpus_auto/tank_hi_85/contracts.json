@@ -1,0 +1,87 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 85 AND iLevel <= 90"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 85 AND iLevel <= 90"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 85 AND iLevel <= 90"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 85 AND iLevel <= 90"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPump",
+          "yAlarm"
+        ],
+        "guard": "iLevel >= 85 AND iLevel <= 90"
+      }
+    ]
+  }
+}

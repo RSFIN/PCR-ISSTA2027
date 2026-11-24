@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xAuto",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xPress",
+        "allow": [
+          "yUnload"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xAuto",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xPress",
+        "allow": [
+          "yUnload"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xAuto",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xPress",
+        "allow": [
+          "yUnload"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ],
+        "guard": "NOT xOil"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLoad",
+          "yBlow",
+          "yUnload",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xAuto",
+        "allow": [
+          "yUnload"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xOil AND xManual AND NOT xPress",
+        "allow": [
+          "yUnload"
+        ]
+      }
+    ]
+  }
+}

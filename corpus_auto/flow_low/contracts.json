@@ -1,0 +1,87 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ],
+        "guard": "rFlow >= 40 AND rFlow <= 50"
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ],
+        "guard": "rFlow >= 40 AND rFlow <= 50"
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ],
+        "guard": "rFlow >= 40 AND rFlow <= 50"
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ],
+        "guard": "rFlow >= 40 AND rFlow <= 50"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yLowFlow",
+          "yTrip"
+        ],
+        "guard": "rFlow >= 40 AND rFlow <= 50"
+      }
+    ]
+  }
+}

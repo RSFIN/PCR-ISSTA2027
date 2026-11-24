@@ -1,0 +1,36 @@
+{
+  "change_order": "三个传感器状态不一致时，不一致告警的确认延时由 500 毫秒改为 1 秒；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xS1",
+          "dir": "rising"
+        },
+        "allow": [
+          "yDisagree"
+        ],
+        "window": [
+          0,
+          200
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 50,
+          "tol": 0
+        },
+        "allow": [
+          "yDisagree"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 600,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT Basic SEL2_OF_3B（三取二冗余表决），正文逐字"
+}

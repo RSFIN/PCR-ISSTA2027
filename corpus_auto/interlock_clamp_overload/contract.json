@@ -1,0 +1,32 @@
+{
+  "change_order": "过载时允许手动夹紧，过载闭锁只约束自动模式；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yAlarm"
+        ],
+        "guard": "xOverload"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yClamp",
+          "yPress",
+          "yEject",
+          "yAlarm"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（三工位互锁矩阵），自建"
+}

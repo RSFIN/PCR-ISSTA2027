@@ -1,0 +1,40 @@
+{
+  "change_order": "星三角切换延时由 5 秒改为 7 秒；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "yMain",
+          "dir": "rising"
+        },
+        "allow": [
+          "yStar",
+          "yDelta"
+        ],
+        "window": [
+          0,
+          1300
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 200,
+          "tol": 0
+        },
+        "allow": [
+          "yStar",
+          "yDelta"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 1000,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（星三角启动）",
+  "undetermined": "E_NO_TRIGGER",
+  "undetermined_detail": "触发变量 ['yMain'] 既不在输入集合内，也没在变更单里点名（锚点是编译器猜的，换说法会漂）"
+}

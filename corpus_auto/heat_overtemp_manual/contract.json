@@ -1,0 +1,30 @@
+{
+  "change_order": "手动模式下允许超温报警输出，不再受手动闭锁限制；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat1",
+          "yOverTemp"
+        ],
+        "guard": "xManual"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat1",
+          "yHeat2",
+          "yOverTemp"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（两段加热区），自建"
+}

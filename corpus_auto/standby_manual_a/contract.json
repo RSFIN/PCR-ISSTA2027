@@ -1,0 +1,31 @@
+{
+  "change_order": "手动模式下允许主泵运行，不再受手动闭锁限制；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "ySwapAlarm"
+        ],
+        "guard": "xManual"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yPumpA",
+          "yPumpB",
+          "ySwapAlarm",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（主备泵站），自建"
+}

@@ -1,0 +1,155 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady",
+        "allow": [
+          "yValveA"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady AND NOT xAuto",
+        "allow": [
+          "yValveA"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady",
+        "allow": [
+          "yValveA"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady AND NOT xAuto",
+        "allow": [
+          "yValveA"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady",
+        "allow": [
+          "yValveA"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady AND NOT xAuto",
+        "allow": [
+          "yValveA"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ],
+        "guard": "NOT xPermit"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yValveA",
+          "yValveB",
+          "yValveC",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady",
+        "allow": [
+          "yValveA"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xPermit AND xManual AND xReady AND NOT xAuto",
+        "allow": [
+          "yValveA"
+        ]
+      }
+    ]
+  }
+}

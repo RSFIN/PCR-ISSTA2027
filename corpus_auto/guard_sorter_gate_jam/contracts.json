@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xAuto",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xPermit",
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xAuto",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xPermit",
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xAuto",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xPermit",
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ],
+        "guard": "xJam"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yMain",
+          "yDiverter",
+          "yGate",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xAuto",
+        "allow": [
+          "yGate"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "xJam AND xManual AND NOT xPermit",
+        "allow": [
+          "yGate"
+        ]
+      }
+    ]
+  }
+}

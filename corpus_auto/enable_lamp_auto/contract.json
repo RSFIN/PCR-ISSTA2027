@@ -1,0 +1,29 @@
+{
+  "change_order": "自动模式下允许运行指示输出，不再受自动闭锁限制；其余逻辑不变。",
+  "over_edit_kind": "cross-variable",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yLamp"
+        ],
+        "guard": "xAuto"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yFan",
+          "yLamp"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（总使能链），自建"
+}

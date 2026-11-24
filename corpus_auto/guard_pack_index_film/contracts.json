@@ -1,0 +1,183 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xAuto",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xPermit",
+        "allow": [
+          "yIndex"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xAuto",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xPermit",
+        "allow": [
+          "yIndex"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xAuto",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xPermit",
+        "allow": [
+          "yIndex"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ],
+        "guard": "NOT xFilm"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "ySeal",
+          "yCut",
+          "yIndex",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xAuto",
+        "allow": [
+          "yIndex"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xFilm AND xManual AND NOT xPermit",
+        "allow": [
+          "yIndex"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit",
+        "allow": [
+          "yFan"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit AND NOT xManual",
+        "allow": [
+          "yFan"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit",
+        "allow": [
+          "yFan"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit AND NOT xManual",
+        "allow": [
+          "yFan"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit",
+        "allow": [
+          "yFan"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit AND NOT xManual",
+        "allow": [
+          "yFan"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ],
+        "guard": "NOT xTemp"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yDamper",
+          "yFan",
+          "yAlarm"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit",
+        "allow": [
+          "yFan"
+        ]
+      },
+      {
+        "always": true,
+        "guard": "NOT xTemp AND xAuto AND xPermit AND NOT xManual",
+        "allow": [
+          "yFan"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "change_order": "xStart 上升沿后，传送带启动确认延时由 200 毫秒改为 400 毫秒；其余逻辑不变。",
+  "over_edit_kind": "same-variable-window",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xStart",
+          "dir": "rising"
+        },
+        "allow": [
+          "yReady"
+        ],
+        "window": [
+          0,
+          40
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 20,
+          "tol": 0
+        },
+        "allow": [
+          "yReady"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 400,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（传送带启动确认）"
+}

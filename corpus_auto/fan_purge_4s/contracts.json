@@ -1,0 +1,107 @@
+{
+  "L": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xFan",
+          "dir": "falling"
+        },
+        "allow": [
+          "yDamper"
+        ],
+        "window": [
+          0,
+          100
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 100,
+          "tol": 0
+        },
+        "allow": [
+          "yDamper"
+        ]
+      }
+    ]
+  },
+  "G0": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yDamper"
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 100,
+          "tol": 0
+        },
+        "allow": [
+          "yDamper"
+        ]
+      }
+    ]
+  },
+  "G1": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xFan",
+          "dir": "falling"
+        },
+        "allow": [
+          "yDamper"
+        ],
+        "window": [
+          0,
+          400
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 100,
+          "tol": 0
+        },
+        "allow": [
+          "yDamper"
+        ]
+      }
+    ]
+  },
+  "G2": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "xFan",
+          "dir": "falling"
+        },
+        "allow": [
+          "yDamper"
+        ],
+        "window": [
+          0,
+          400
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 100,
+          "tol": 0
+        },
+        "allow": [
+          "yDamper"
+        ]
+      }
+    ]
+  }
+}

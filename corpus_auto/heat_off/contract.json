@@ -1,0 +1,30 @@
+{
+  "change_order": "温度回差控制的停热报警阈值由 60 改为 55；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ],
+    "require": [
+      {
+        "always": true,
+        "allow": [
+          "yHeat",
+          "yAlarm"
+        ],
+        "guard": "rTemp >= 55 AND rTemp <= 60"
+      }
+    ]
+  },
+  "n_cycles": 300,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "W1 沙箱自建（温度回差控制），加热/停止双阈值"
+}

@@ -1,0 +1,36 @@
+{
+  "change_order": "输出 Q 的超时自动复位时间由 500 毫秒改为 2 秒；其余逻辑不变。",
+  "over_edit_kind": "same-variable-guard",
+  "contract": {
+    "clauses": [
+      {
+        "edge": {
+          "var": "Q",
+          "dir": "falling"
+        },
+        "allow": [
+          "Q"
+        ],
+        "window": [
+          0,
+          800
+        ]
+      }
+    ],
+    "require": [
+      {
+        "shape": {
+          "len": 150,
+          "tol": 0
+        },
+        "allow": [
+          "Q"
+        ]
+      }
+    ]
+  },
+  "n_cycles": 700,
+  "trace_style": "normal",
+  "generated_by": "make_corpus_auto.py",
+  "origin": "OSCAT Basic DRIVER_1（多功能驱动：置位/复位 + 翻转 + 超时自动复位），正文逐字"
+}
